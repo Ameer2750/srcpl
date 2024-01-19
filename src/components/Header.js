@@ -30,16 +30,16 @@ const Header = () => {
                 <div className='flex flex-row items-center gap-4'>
                     <FiPhoneCall className='text-4xl p-1 text-red-500 bg-gray-100 ' />
 
-                    <div className='text-lg font-semibold'>
-                        <h1>Contact Number </h1>
-                        <p className='text-md '>+114 1234 259 </p>
+                    <div >
+                        <h1 className='text-lg font-semibold'>Contact Number </h1>
+                        <p className=' '>+114 1234 259 </p>
                     </div>
                 </div>
             </div>
-            <div className='flex flex-row  items-center justify-end bg-gray-400  '>
-                <IoIosSearch className='text-3xl text-white '/>
+            <div className='flex flex-row text-white gap-2 px-6 py-2 rounded-md mx-12  items-center justify-end bg-orange-500 hover:bg-black hover:text-orange-500 '>
+                <IoIosSearch className='text-2xl'/>
 
-                <button className='px-5  py-2 text-white rounded border '>Search</button>
+                <button className='font-semibold text-lg '>Search</button>
             </div>
 
 

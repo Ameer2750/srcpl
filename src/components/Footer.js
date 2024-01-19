@@ -5,7 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <div className=' bg-[#081528] '>
+        <div className=' bg-[#081528] py-2'>
 
 
             <div className='flex flex-row justify-between border-b border-b-gray-500 py-14 '>
@@ -49,7 +49,7 @@ const Footer = () => {
                             className=' text-black p-2 rounded-l-md'
                             placeholder='Your email address'
                         />
-                        <button className='bg-orange-500 p-2 rounded-r-md'>Submit</button>
+                        <button className='bg-orange-500 text-white hover:text-orange-500 hover:bg-black p-2 rounded-r-md font-semibold'>Submit</button>
                     </div>
 
                 </div>
