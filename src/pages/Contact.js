@@ -1,12 +1,13 @@
 import React from 'react'
 import { CiLocationOn } from 'react-icons/ci'
-import { MdArrowForwardIos } from 'react-icons/md'
+import { FiPhoneCall } from 'react-icons/fi'
+import { MdArrowForwardIos, MdOutlineMailOutline } from 'react-icons/md'
 
 const Contact = () => {
     return (
-        <div className='my-14'>
+        <div className='my-24 mx-14 '>
 
-            <div className='flex flex-row justify-between items-center mx-4 px-14 py-14  '>
+            <div className='flex flex-row justify-between items-center px-14 py-14  '>
                 <div className='flex flex-col items-center bg-gray-100 px-14 py-14 gap-2'>
                     <CiLocationOn className='text-4xl ' />
                     <h1 className='text-xl font-semibold'>
@@ -19,7 +20,7 @@ const Contact = () => {
                 </div>
 
                 <div className='flex flex-col items-center bg-gray-100 px-24 py-14 gap-2'>
-                    <CiLocationOn className='text-4xl ' />
+                    <FiPhoneCall className='text-3xl ' />
                     <h1 className='text-xl font-semibold'>
                         Phone Number
 
@@ -33,7 +34,7 @@ const Contact = () => {
                     </p>
                 </div>
                 <div className='flex flex-col items-center bg-gray-100 px-24 py-14 gap-2'>
-                    <CiLocationOn className='text-4xl ' />
+                    <MdOutlineMailOutline className='text-4xl ' />
                     <h1 className='text-xl font-semibold'>
                         Email
                     </h1>
@@ -46,7 +47,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className='mx-4 flex flex-row gap-14  mx-10'>
+            <div className='flex flex-row gap-14 my-20'>
                 <div className='flex flex-col gap-14'>
                     <div className='flex flex-col gap-3'>
                         <h1 className='text-5xl'>Contact <b className='text-orange-500'>Us</b></h1>

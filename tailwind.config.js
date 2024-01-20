@@ -4,5 +4,14 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
     './public/index.html',
   ],
-  // other configurations...
+  darkMode: false,
+  theme: {
+    extend: {
+    
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 }

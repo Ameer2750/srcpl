@@ -8,8 +8,8 @@ import { IoIosSearch } from "react-icons/io";
 
 const Header = () => {
     return (
-        <div className='flex flex-row justify-between items-center  shadow '>
-            <div className='flex flex-row justify-start items-center gap-14 my-5 mx-6'>
+        <div className='flex flex-row justify-between items-center  shadow py-5 '>
+            <div className='flex flex-row justify-start items-center gap-14 mx-6'>
                 <div className='flex flex-row items-center gap-4'>
                     <MdOutlineMailOutline className='text-4xl p-1  text-red-500 bg-gray-100 ' />
                     <div className='flex flex-col  items-start'>
@@ -36,10 +36,10 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-row text-white gap-2 px-6 py-2 rounded-md mx-12  items-center justify-end bg-orange-500 hover:bg-black hover:text-orange-500 '>
+            <div className='flex flex-row text-white gap-2 px-6 py-2 rounded-md mx-4  items-center justify-end bg-orange-500 hover:bg-black hover:text-orange-500 '>
                 <IoIosSearch className='text-2xl'/>
 
-                <button className='font-semibold text-lg '>Search</button>
+                <button className='font-semibold text-lg text-end '>Search</button>
             </div>
 
 

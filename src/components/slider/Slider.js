@@ -20,7 +20,7 @@ const Slider = () => {
     };
 
     return (
-        <div className='  bg-[#081528] py-28 px-10'>
+        <div className='  bg-[#081528] p-24 mx-14'>
             <SimpleSlider {...settings}>
                 <div >
                     <div className='flex flex-row justify-between items-center  gap-14'>

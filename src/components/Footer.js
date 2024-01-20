@@ -2,10 +2,11 @@ import React from 'react'
 import logo from '../assets/logo.png'
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className=' bg-[#081528] py-2'>
+        <div className=' bg-[#081528] pt-2 pb-1 px-14'>
 
 
             <div className='flex flex-row justify-between border-b border-b-gray-500 py-14 '>
@@ -29,7 +30,9 @@ const Footer = () => {
                         </ul>
 
                         <ul className='flex flex-col gap-3'>
-                            <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Our Portfolio</li>
+                            <Link to='/our-portfolio'>                          
+                              <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Our Portfolio</li>
+                            </Link>
                             <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Privacy Policy</li>
                             <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Contact Us</li>
                             <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>FAQ</li>
