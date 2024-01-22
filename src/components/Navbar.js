@@ -51,12 +51,12 @@ const Navbar = () => {
 
   return (
     <div className='flex flex-row justify-between shadow my-0.5 items-center py-1 bg-[#ffffff]'>
-      <div className='w-32 my-3'>
-        <img src={logo} className='bg-blue-950 px-2 py-3 mx-8' />
+      <div className='w-64'>
+        <img src={logo} className='bg-blue-950 h-20   py-3 mx-4' />
       </div>
 
       <div className='my-5'>
-        <ul className='flex flex-row gap-8  justify-between items-center'>
+        <ul className='flex flex-row gap-10 justify-between items-center'>
         <li
             className='relative group'
             onMouseEnter={homeToggleDropdown}
@@ -78,7 +78,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/home/whats-new'
-                  className='block  text-sm  text-gray-400    hover:text-orange-500'
+                  className='block  text-md text-black   hover:text-orange-500'
                 >
                   What's New
                 </Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/home/subpage2'
-                  className='block text-sm  text-gray-400    hover:text-orange-500'
+                  className='block text-md text-black    hover:text-orange-500'
                 >
                   Our Mission
                 </Link>
@@ -94,7 +94,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/home/subpage1'
-                  className='block  text-sm  text-gray-400   hover:text-orange-500'
+                  className='block  text-md text-black   hover:text-orange-500'
                 >
                   Our Vision
                 </Link>
@@ -102,7 +102,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/home/subpage1'
-                  className='block text-sm  text-gray-400 hover:text-orange-500  '
+                  className='block text-md text-black hover:text-orange-500  '
                 >
                   Our Goals
                 </Link>
@@ -110,7 +110,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/home/subpage1'
-                  className='block text-sm  text-gray-400 hover:text-orange-500  '
+                  className='block text-md text-black hover:text-orange-500  '
                 >
                   Our Presence in the market
                 </Link>
@@ -138,7 +138,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/about-us/subpage1'
-                  className='block  text-sm  text-gray-400 hover:text-orange-500 '
+                  className='block  text-md text-black hover:text-orange-500 '
                 >
                   About SRCPL
                 </Link>
@@ -146,7 +146,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/about-us/subpage2'
-                  className='block text-sm  text-gray-400  hover:text-orange-500   '
+                  className='block text-md text-black  hover:text-orange-500   '
                 >
                  Team Overview
                 </Link>
@@ -154,7 +154,7 @@ const Navbar = () => {
                 <li>
                 <Link
                   to='/about-us/subpage2'
-                  className='block text-sm  text-gray-400  hover:text-orange-500   '
+                  className='block text-md text-black  hover:text-orange-500   '
                 >
                   S.R Group Overview
                 </Link>
@@ -162,7 +162,7 @@ const Navbar = () => {
                 <li>
                 <Link
                   to='/about-us/subpage2'
-                  className='block text-sm  text-gray-400  hover:text-orange-500   '
+                  className='block text-md text-black  hover:text-orange-500   '
                 >
                   Awards & Recognitions
                 </Link>
@@ -191,7 +191,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/solutions/subpage1'
-                   className='block  text-sm  text-gray-400    hover:text-orange-500'
+                   className='block  text-md text-black    hover:text-orange-500'
                 >
                   Overall Solutions
                 </Link>
@@ -199,7 +199,7 @@ const Navbar = () => {
               {/* <li>
                 <Link
                   to='/solutions/subpage2'
-                   className='block  text-sm  text-gray-400    hover:text-orange-500'
+                   className='block  text-md text-black    hover:text-orange-500'
                 >
                   Subpage 2
                 </Link>
@@ -229,7 +229,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/our-portfolio/subpage1'
-                   className='block  text-sm  text-gray-400    hover:text-orange-500'
+                   className='block  text-md text-black    hover:text-orange-500'
                 >
                   Mitsubishi Electric 
                 </Link>
@@ -237,7 +237,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/our-portfolio/subpage2'
-                   className='block  text-sm  text-gray-400    hover:text-orange-500'
+                   className='block  text-md text-black    hover:text-orange-500'
                 >
                   Phoenix Contact
 
@@ -246,7 +246,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/our-portfolio/subpage2'
-                   className='block  text-sm  text-gray-400    hover:text-orange-500'
+                   className='block  text-md text-black    hover:text-orange-500'
                 >
                     Control Panels
                 </Link>
@@ -254,7 +254,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/our-portfolio/subpage2'
-                   className='block  text-sm  text-gray-400    hover:text-orange-500'
+                   className='block  text-md text-black    hover:text-orange-500'
                 >
                   Turnkey Solutions
 
@@ -263,7 +263,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/our-portfolio/subpage2'
-                   className='block  text-sm  text-gray-400    hover:text-orange-500'
+                   className='block  text-md text-black    hover:text-orange-500'
                 >
                   Services
 
@@ -291,7 +291,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/solutions/subpage1'
-                  className='block px-5 py-2 text-sm  text-gray-400    hover:text-orange-500'
+                  className='block px-5 py-2 text-md text-black    hover:text-orange-500'
                 >
                     Mitsubishi Electric India
                 </Link>
@@ -299,7 +299,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/solutions/subpage2'
-                  className='block px-5 py-2 text-sm  text-gray-400    hover:text-orange-500'
+                  className='block px-5 py-2 text-md text-black    hover:text-orange-500'
                 >
                   Phoenix Contact Beijer Sick
                 </Link>
@@ -326,7 +326,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to='/contact-us/subpage1'
-                   className='block  text-sm  text-gray-400    hover:text-orange-500'
+                   className='block  text-md text-black    hover:text-orange-500'
                 >
                   SRCPL Contact 
                 </Link>
@@ -334,7 +334,7 @@ const Navbar = () => {
               {/* <li>
                 <Link
                   to='/contact-us/subpage2'
-                   className='block text-sm  text-gray-400    hover:text-orange-500'
+                   className='block text-md text-black    hover:text-orange-500'
                 >
                   Subpage 2
                 </Link>
@@ -345,7 +345,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <button className='bg-orange-500 hover:bg-gray-1000 px-4 mx-4 py-2 my-4 rounded-md text-lg text-white font-semibold'>
+      <button className='bg-orange-500 hover:bg-blue-950 px-4 mx-4 py-2 my-4 rounded-md text-lg text-white hover:text-orange-500 font-semibold'>
         Inquiry Now
       </button>
     </div>

@@ -22,20 +22,30 @@ const Footer = () => {
                     <h1 className='text-2xl text-white font-semibold'>Useful Links</h1>
                     <div className='flex flex-row gap-5'>
 
-                        <ul className='flex flex-col gap-3'>
-                            <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>About Us</li>
-                            <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>Blogs</li>
-                            <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>What We Do</li>
-                            <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>Pricing</li>
+                        <ul className='flex flex-col gap-5'>
+                            <Link to='/about-us'>
+                                <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>About Us</li>
+                            </Link>
+                            <Link to='/solutions'>
+                                <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>Solutions</li>
+                            </Link>
+                            <Link to='/'>
+                                <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>Principles</li>
+                            </Link>
+                            {/* <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>Pricing</li> */}
                         </ul>
 
-                        <ul className='flex flex-col gap-3'>
-                            <Link to='/our-portfolio'>                          
-                              <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Our Portfolio</li>
+                        <ul className='flex flex-col gap-5'>
+                            <Link to='/our-portfolio'>
+                                <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Our Portfolio</li>
                             </Link>
-                            <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Privacy Policy</li>
-                            <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Contact Us</li>
-                            <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>FAQ</li>
+                            {/* <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Privacy Policy</li> */}
+                            <Link to='/contact-us'>
+                                <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Contact Us</li>
+                            </Link>
+
+                            {/* <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>FAQ</li> */}
+
                         </ul>
                     </div>
 

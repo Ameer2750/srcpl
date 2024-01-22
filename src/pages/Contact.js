@@ -5,9 +5,13 @@ import { MdArrowForwardIos, MdOutlineMailOutline } from 'react-icons/md'
 
 const Contact = () => {
     return (
-        <div className='my-24 mx-14 '>
+        <div className='py-20 bg-[#f8f8f8] '>
 
-            <div className='flex flex-row justify-between items-center px-14 py-14  '>
+            <div>
+                <h1 className='text-4xl text-orange-500 py-14 bg-gray-200 text-center font-semibold'>Contact Us</h1>
+            </div>
+
+            <div className='flex flex-row justify-between items-center px-14 py-24 mx-14 '>
                 <div className='flex flex-col items-center bg-gray-100 px-14 py-14 gap-2'>
                     <CiLocationOn className='text-4xl ' />
                     <h1 className='text-xl font-semibold'>
@@ -47,7 +51,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className='flex flex-row gap-14 my-20'>
+            <div className='flex flex-row gap-14 my-20 mx-14'>
                 <div className='flex flex-col gap-14'>
                     <div className='flex flex-col gap-3'>
                         <h1 className='text-5xl'>Contact <b className='text-orange-500'>Us</b></h1>

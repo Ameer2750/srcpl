@@ -4,11 +4,12 @@ import folioImage from '../assets/Vizion-spire-360x400.jpg'
 
 const Portfolio = () => {
     return (
-        <div className=' my-20 '>
-            <div className=' bg-[#f8f8f8]'>
-                <div>
-                    <h1 className='text-4xl text-orange-500 py-14 bg-gray-200 text-center font-bold'>Our Product Portfolio</h1>
-                </div>
+        <div className=' bg-[#f8f8f8] py-20 '>
+             <div>
+                    <h1 className='text-4xl text-orange-500 py-14 bg-gray-200 text-center font-semibold'>Our Portfolio</h1>
+            </div>
+            <div className=''>
+               
                 <div className='flex flex-col justify-center mx-14 my-14 items-center '>
 
                     <p className='text-lg text-justify text-gray-400  leading-9 '>

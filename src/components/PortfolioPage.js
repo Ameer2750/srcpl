@@ -5,7 +5,7 @@ import pageImage from '../assets/card2.jpg'
 
 const data = [{
     id: 1,
-    header: 'Our Portfolio',
+    header: 'Our Product Portfolio',
     subHeader: 'Mitsubishi Products',
 
     subContent: [
@@ -66,15 +66,15 @@ const data = [{
 }]
 const PortfolioPage = (props) => {
     return (
-        <div className=' flex flex-col gap-2  justify-center mb-14 '>
-            <div className='text-4xl text-orange-500 font-bold text-center my-10'>
+        <div className=' flex flex-col gap-2  justify-center bg-[#f8f8f8] py-10 '>
+            <div className='text-4xl text-orange-500 font-semibold bg-gray-200 py-14 text-center my-10'>
                 {data[0].header}
             </div>
-            <div className='px-36 py-10'>
-                <img src={props.img} />
+            <div className='mx-4 py-10'>
+                <img src={props.img} className='w-[100%]' />
             </div>
 
-            <div className='text-4xl font-bold text-center text-orange-500  mb-6'>
+            <div className='text-4xl font-semibold text-center text-orange-500  mb-6'>
                 {data[0].subHeader}
             </div>
 

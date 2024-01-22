@@ -13,7 +13,7 @@ const Header = () => {
                 <div className='flex flex-row items-center gap-4'>
                     <MdOutlineMailOutline className='text-4xl p-1  text-red-500 bg-gray-100 ' />
                     <div className='flex flex-col  items-start'>
-                        <h1 className='text-lg font-semibold'>E-Mail</h1>
+                        <h1 className='text-lg hover:text-orange-500 font-semibold'>E-Mail</h1>
                         <p className='text-md '>support@gmail.com</p>
                     </div>
                 </div>
@@ -22,7 +22,7 @@ const Header = () => {
                     <CiLocationOn className='text-4xl p-1 text-red-500 bg-gray-100 ' />
 
                     <div>
-                        <h1 className='text-lg font-semibold'>Location</h1>
+                        <h1 className='text-lg font-semibold hover:text-orange-500'>Location</h1>
                         <p className='text-md '>8502 Preston Rd. Maine 98380</p>
                     </div>
                 </div>
@@ -31,12 +31,12 @@ const Header = () => {
                     <FiPhoneCall className='text-4xl p-1 text-red-500 bg-gray-100 ' />
 
                     <div >
-                        <h1 className='text-lg font-semibold'>Contact Number </h1>
+                        <h1 className='text-lg hover:text-orange-500 font-semibold'>Contact Number </h1>
                         <p className=' '>+114 1234 259 </p>
                     </div>
                 </div>
             </div>
-            <div className='flex flex-row text-white gap-2 px-6 py-2 rounded-md mx-4  items-center justify-end bg-orange-500 hover:bg-black hover:text-orange-500 '>
+            <div className='flex flex-row text-white gap-2 px-6 py-2 rounded-md mx-4  items-center justify-end bg-orange-500 hover:bg-blue-950 hover:text-orange-500 '>
                 <IoIosSearch className='text-2xl'/>
 
                 <button className='font-semibold text-lg text-end '>Search</button>
