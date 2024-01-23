@@ -52,7 +52,7 @@ const Contact = () => {
             </div>
 
             <div className='flex flex-row gap-14 my-20 mx-14'>
-                <div className='flex flex-col gap-14'>
+                <div className='flex flex-col px-12 gap-14'>
                     <div className='flex flex-col gap-3'>
                         <h1 className='text-5xl'>Contact <b className='text-orange-500'>Us</b></h1>
                         <p className='text-gray-400'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -65,7 +65,7 @@ const Contact = () => {
                                 <input
                                     type='text'
                                     name='name'
-                                    className='border border-gray-500 px-12 py-3 rounded-md'
+                                    className='border border-gray-500 px-3 py-3 rounded-md'
                                 />
                             </div>
                             <div>
@@ -74,7 +74,7 @@ const Contact = () => {
                                     <input
                                         type='text'
                                         name='name'
-                                        className='border border-gray-500 px-12 py-3  rounded-md'
+                                        className='border border-gray-500 px-3 py-3  rounded-md'
                                     />
                                 </div>
                             </div>
@@ -84,18 +84,18 @@ const Contact = () => {
                             <input
                                 type='text'
                                 name='name'
-                                className='border border-gray-500 px-12 py-3  rounded-md'
+                                className='border   border-gray-500 px-3 py-3  rounded-md'
 
                             />
                             <label className='text-md font-semibold text-gray-400 '>Your Message</label>
-                            <textarea className='border border-gray-500 px-12 py-3  rounded-md'
+                            <textarea className='border border-gray-500 px-3 py-3  rounded-md'
                             >
 
                             </textarea>
                         </div>
 
                         <div className='my-2'>
-                            <button className=' px-10 py-3 text-md rounded-md  text-white font-semibold hover:text-orange-500 bg-orange-500 hover:bg-black '>Send Message</button>
+                            <button className=' px-10 py-3 text-md rounded-md  text-white font-semibold hover:text-orange-500 bg-orange-500 hover:bg-blue-950 '>Send Message</button>
                         </div>
 
                     </form>

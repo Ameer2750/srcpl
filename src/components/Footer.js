@@ -29,7 +29,7 @@ const Footer = () => {
                             <Link to='/solutions'>
                                 <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>Solutions</li>
                             </Link>
-                            <Link to='/'>
+                            <Link to='/principles'>
                                 <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>Principles</li>
                             </Link>
                             {/* <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>Pricing</li> */}
@@ -52,7 +52,7 @@ const Footer = () => {
 
 
                 </div>
-                <div className='flex flex-col gap-7 mx-4'>
+                <div className='flex flex-col gap-5 mx-4'>
                     <h1 className='text-2xl text-white font-semibold'>Subscribe</h1>
                     <p className='text-md font-semibold text-gray-500'>It’s The Bright One, It’s The Right One, That’s Newsletter.</p>
                     <div>
@@ -68,9 +68,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='flex flex-row  justify-between items-center my-5 py-4 mx-4'>
+            <div className='flex flex-row  justify-between items-center  py-5 mx-4'>
 
-                <p className='text-gray-500 py-1 '>© 2024 vizion All Rights Reserved.</p>
+                <p className='text-gray-500 '>© 2024 vizion All Rights Reserved.</p>
 
                 <div className='flex flex-row  gap-7 '>
                     <FaFacebook color='white' className='text-2xl  hover:bg-orange-500 p-1 ' />

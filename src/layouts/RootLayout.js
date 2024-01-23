@@ -8,11 +8,11 @@ import { Outlet } from 'react-router-dom';
 
 
 
-const RootLayout = () => {
+const RootLayout = ({handlePortfolioData}) => {
     return (
         <div>
             <div><Header /></div>
-            <div><Navbar /></div>
+            <div><Navbar handlePortfolioData={handlePortfolioData} /></div>
             <div><Outlet /></div>
             <Footer  />
         </div>

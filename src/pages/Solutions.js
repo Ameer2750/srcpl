@@ -91,7 +91,7 @@ const data = [{
 const Solutions = (props) => {
   return (
     <div className=' flex bg-[#f8f8f8] flex-col gap-2   justify-center  py-6 '>
-      <div className='text-4xl bg-gray-200 my-14 py-14 text-orange-500 font-semibold text-center my-10'>
+      <div id='solutions'  className='text-4xl bg-gray-200 my-14 py-14 text-orange-500 font-semibold text-center my-10'>
         {data[0].header}
       </div>
 

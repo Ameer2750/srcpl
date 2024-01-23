@@ -14,11 +14,11 @@ const Home = () => {
 
     return (
 
-        <div className='bg-[#fff] mt-14'>
+        <div className='bg-[#f8f8f8] py-14'>
             <div className='flex flex-col mx-14'>
                 <div className='flex flex-row justify-between  mx-4 '>
                     <div className='flex flex-col  gap-6  '>
-                        <h2 className='text-4xl font-bold text-orange-500 '>What's New</h2>
+                        <h2 id='whats-new' className='text-4xl font-bold text-orange-500 '>What's New</h2>
                         <div className='flex flex-col justify-center items-center gap-5'>
                             <p className='text-lg text-gray-400 '>Discover the latest breakthroughs in industrial automation solutions at SRCPL. We are thrilled to unveil recent advancements that underscore our commitment to staying at the forefront of technology. From enhanced Shop Floor Control Panels to innovative Cloud Integrations, our updates are designed to elevate industries to new heights.
                                 Our Mission
@@ -29,7 +29,7 @@ const Home = () => {
                             </p>
                         </div>
                         <div className='flex flex-col  gap-8'>
-                            <h1 className='text-4xl font-bold text-orange-500 '>Our Mission</h1>
+                            <h1 id='our-mission' className='text-4xl font-bold text-orange-500 '>Our Mission</h1>
                             <p className='text-lg text-gray-400 '>
                                 At the heart of [SRCPL]'s mission is a dedication to crafting bespoke factory automation solutions. From the intricacies of control panels to the expansiveness of cloud-based systems, our mission is to redefine industrial processes, making them more efficient, intelligent, and adaptive.
                             </p>
@@ -55,7 +55,7 @@ const Home = () => {
                             <img src={bgImage} className='h-[500px]' />
                         </div>
                         <div className='w-[50%] mt-14 flex flex-col gap-8 p-10 py-5 gap-5'>
-                            <h1 className='text-4xl font-bold text-center text-orange-500 '>Our Vision</h1>
+                            <h1  id='our-vision' className='text-4xl font-bold text-center text-orange-500 '>Our Vision</h1>
                             <p className='text-lg font-md text-gray-400 leading-9 text-justify'>
                                 Envision a future where industries seamlessly synchronize with intelligent automation. We, at SRCPL, strive to be the driving force behind this transformation. By amalgamating precision engineering with cutting-edge technology, our vision is to empower industries to achieve unprecedented levels of productivity, sustainability, and growth.
                             </p>
@@ -74,7 +74,7 @@ const Home = () => {
                     <div className='w-[50%] text-white flex flex-col gap-7 -mt-4'>
                         <div className='flex flex-col gap-3'>
                             {/* <h1 className='text-orange-500 text-md'>OUR PROCESS</h1> */}
-                            <h1 className='text-4xl text-orange-500 text-md font-semibold'>Our Goals</h1>
+                            <h1 id='our-goals' className='text-4xl text-orange-500 text-md font-semibold'>Our Goals</h1>
                         </div>
 
                         <div className='flex flex-col gap-8'>
@@ -114,7 +114,7 @@ const Home = () => {
 
                     <div className=' w-[50%] '>
                         {/* <h1 className='text-orange-500 text-md font-semibold'>OUR SERVICES</h1> */}
-                        <h1 className='text-4xl font-bold text-orange-500 '>Our Presence in the market</h1>
+                        <h1 id='our-presence-in-the-market' className='text-4xl font-bold text-orange-500 '>Our Presence in the market</h1>
                     </div>
 
                     <div className='w-[50%]'>
@@ -132,7 +132,7 @@ const Home = () => {
 
             <div className='flex flex-col justify-center items-center '>
 
-                <div className='flex flex-row justify-between items-center bg-[#fff] gap-8 p-10  mx-4'>
+                <div className='flex flex-row justify-between items-center bg-[#f8f8f8] gap-8 p-10  mx-4'>
                     <CardWithImage img={cardImage1} header={'INDUSTRY SOFTWARE'} subHeader={'Edgifying Machine Learning For Industria Thel IoT (IIot)'} para={'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'} />
                     <CardWithImage img={cardImage1} header={'MANUFACTURING'} subHeader={'FogHorn Adds Drag And Drop Analytic Authoring For IOT'} para={'Web development is the work involved in developing a website for the Internet or an intranet.'} />
                     <CardWithImage img={cardImage1} header={'MACHINE LEARNING'} subHeader={'FogHorn AchievesAWS Industrial Software Competency'} para={'Web development is the work involved in developing a website for the Internet or an intranet.'} />

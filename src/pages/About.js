@@ -16,7 +16,7 @@ const About = () => {
 
         <div className='flex flex-row justify-between items-center px-14 my-24 mx-8 gap-10'>
           <div className='flex flex-col w-[50%] -mt-10 gap-4'>
-            <h1 className='text-3xl text-orange-500 font-semibold'>About SRCPL</h1>
+            <h1 id='about-srcpl' className='text-3xl text-orange-500 font-semibold'>About SRCPL</h1>
             <p className='text-lg leading-7 text-gray-400'>Discover the latest breakthroughs in industrial automation solutions at SRCPL. We are thrilled to unveil recent advancements that underscore our commitment to staying at the forefront of technology. From enhanced Shop Floor Control Panels to innovative Cloud Integrations, our updates are designed to elevate industries to new heights. Our Mission
               At the heart of [SRCPL]'s mission is a dedication to crafting bespoke factory automation solutions. From the intricacies of control panels to the expansiveness of cloud-based systems, our mission is to redefine industrial processes, making them more efficient, intelligent, and adaptive.
             </p>
@@ -53,7 +53,7 @@ const About = () => {
 
         <div className='py-24'>
           <div className='flex flex-col items-center gap-4 '>
-            <h1 className='text-3xl text-orange-500 font-semibold'>Team Overview</h1>
+            <h1 id='team-overview' className='text-3xl text-orange-500 font-semibold'>Team Overview</h1>
             <p className='text-lg leading-7 text-gray-400'>
               Discover the latest breakthroughs in industrial automation solutions at SRCPL
             </p>
@@ -63,19 +63,20 @@ const About = () => {
             <Slider />
           </div>
           <div className='py-10 my-14'>
-            <h1 className='text-3xl text-orange-500 font-semibold text-center '>S.R Group Overview</h1>
+            <h1 id='sr-group-overview' className='text-3xl text-orange-500 font-semibold text-center '>S.R Group Overview</h1>
           </div>
           <div className='bg-gray-200 py-14'>
             <MultipleSlider color="orange" />
           </div>
 
           <div className='my-14'>
-          <h1 className='text-3xl text-orange-500 font-semibold'>Awards & Recognitions</h1>
-      </div>
+            <h1 id='awards-recognitions' className='text-3xl text-orange-500 font-semibold'>Awards & Recognitions</h1>
+          
+          </div>
         </div>
       </div>
 
-    
+
     </div>
   )
 }

@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
-import { Link , useLocation} from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [isHomeDropdownOpen,setHomeDropdownopen]= useState(false);
   const [isSolutionsDropdownOpen, setSolutionsDropdownOpen] = useState(false);
   const [isAboutDropdownOpen,setAboutDropdownOpen] = useState (false);
   const [isPortfolioDropdownOpen,setPortfolioDropdownopen]= useState(false);
   const [isPrinciplesDropdownOpen,setPrinciplesDropdownopen]= useState(false);
   const [isContactDropdownOpen,setContactDropdownopen]= useState(false);
-  // const location = useLocation(false);
-
+  
+  const navigate =  useNavigate()
+  
+  const handleClick = (data) => {
+    props.handlePortfolioData(data)
+    navigate('/portfolio-page')
+  }
 
   const homeToggleDropdown = () => {
     setHomeDropdownopen(!isHomeDropdownOpen);
@@ -50,7 +55,7 @@ const Navbar = () => {
   // const isHomepage = location.pathname === '/';
 
   return (
-    <div className='flex flex-row justify-between shadow my-0.5 items-center py-1 bg-[#ffffff]'>
+    <div className='flex flex-row justify-between shadow my-0.5 items-center py-1 bg-[#f8f8f8]'>
       <div className='w-64'>
         <img src={logo} className='bg-blue-950 h-20   py-3 mx-4' />
       </div>
@@ -70,50 +75,50 @@ const Navbar = () => {
             </Link>
           
             <ul
-              className={`absolute font-semibold left-0   mt-0.5 w-64 px-5 py-5 bg-gray-100 border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50  ${
+              className={`absolute font-semibold left-0   mt-0.5 w-64 px-5 py-5 bg-white border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50  ${
                 isHomeDropdownOpen  ? 'block' : 'hidden'
 
               }`}
             >
               <li>
-                <Link
-                  to='/home/whats-new'
+                <a
+                  href='/#whats-new'
                   className='block  text-md text-black   hover:text-orange-500'
                 >
                   What's New
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to='/home/subpage2'
+                <a
+                  href='/#our-mission'
                   className='block text-md text-black    hover:text-orange-500'
                 >
                   Our Mission
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to='/home/subpage1'
+                <a
+                 href='/#our-vision'
                   className='block  text-md text-black   hover:text-orange-500'
                 >
                   Our Vision
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to='/home/subpage1'
+                <a
+                  href='/#our-goals'
                   className='block text-md text-black hover:text-orange-500  '
                 >
                   Our Goals
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to='/home/subpage1'
+                <a
+                  href='/#our-presence-in-the-market'
                   className='block text-md text-black hover:text-orange-500  '
                 >
                   Our Presence in the market
-                </Link>
+                </a>
               </li>
               {/* Add more submenu links as needed */}
             </ul>
@@ -131,41 +136,41 @@ const Navbar = () => {
               About Us
             </Link>
             <ul
-              className={`absolute font-semibold left-0   mt-0.5 w-64 px-5 py-5 bg-gray-100 border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50  ${
+              className={`absolute font-semibold left-0   mt-0.5 w-64 px-5 py-5 bg-white border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50  ${
                 isAboutDropdownOpen ? 'block' : 'hidden'
               }`}
             >
               <li>
-                <Link
-                  to='/about-us/subpage1'
+                <a
+                  href='/about-us/#about-srcpl'
                   className='block  text-md text-black hover:text-orange-500 '
                 >
                   About SRCPL
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to='/about-us/subpage2'
+                <a
+                  href='/about-us/#team-overview'
                   className='block text-md text-black  hover:text-orange-500   '
                 >
                  Team Overview
-                </Link>
+                </a>
                 </li>
                 <li>
-                <Link
-                  to='/about-us/subpage2'
+                <a
+                  href='/about-us/#sr-group-overview'
                   className='block text-md text-black  hover:text-orange-500   '
                 >
                   S.R Group Overview
-                </Link>
+                </a>
                 </li>
                 <li>
-                <Link
-                  to='/about-us/subpage2'
+                <a
+                  href='/about-us/#awards-recognitions'
                   className='block text-md text-black  hover:text-orange-500   '
                 >
                   Awards & Recognitions
-                </Link>
+                </a>
               </li>
               {/* Add more submenu links as needed */}
             </ul>
@@ -184,17 +189,17 @@ const Navbar = () => {
               Solutions
             </Link>
             <ul
-              className={`absolute font-semibold left-0   mt-0.5 w-64 px-5 py-5 bg-gray-100 border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50 ${
+              className={`absolute font-semibold left-0   mt-0.5 w-64 px-5 py-5 bg-white border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50 ${
                 isSolutionsDropdownOpen ? 'block' : 'hidden'
               }`}
             >
               <li>
-                <Link
-                  to='/solutions/subpage1'
+                <a
+                  href='/solutions/#solutions'
                    className='block  text-md text-black    hover:text-orange-500'
                 >
                   Overall Solutions
-                </Link>
+                </a>
               </li>
               {/* <li>
                 <Link
@@ -222,54 +227,51 @@ const Navbar = () => {
               Our Portfolio
             </Link>
             <ul
-              className={`absolute font-semibold left-0   mt-0.5 w-64 px-5  py-5 bg-gray-100 border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50   ${
+              className={`absolute font-semibold left-0   mt-0.5 w-64 px-5  py-5 bg-white border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50   ${
                 isPortfolioDropdownOpen ? 'block' : 'hidden'
               }`}
             >
               <li>
-                <Link
-                  to='/our-portfolio/subpage1'
-                   className='block  text-md text-black    hover:text-orange-500'
+                <p
+                  onClick={() => handleClick(0)}
+                   className='block cursor-pointer text-md text-black    hover:text-orange-500'
                 >
                   Mitsubishi Electric 
-                </Link>
+                </p>
               </li>
               <li>
-                <Link
-                  to='/our-portfolio/subpage2'
-                   className='block  text-md text-black    hover:text-orange-500'
+                <p
+                  onClick={() => handleClick(1)}
+                   className='block cursor-pointer text-md text-black    hover:text-orange-500'
                 >
                   Phoenix Contact
-
-                </Link>
+                </p>
               </li>
               <li>
-                <Link
-                  to='/our-portfolio/subpage2'
-                   className='block  text-md text-black    hover:text-orange-500'
+                <p
+                  onClick={() => handleClick(2)}
+                   className='block cursor-pointer text-md text-black    hover:text-orange-500'
                 >
-                    Control Panels
-                </Link>
+                   Control Panels
+                </p>
               </li>
               <li>
-                <Link
-                  to='/our-portfolio/subpage2'
-                   className='block  text-md text-black    hover:text-orange-500'
+                <p
+                  onClick={() => handleClick(3)}
+                   className='block cursor-pointer text-md text-black    hover:text-orange-500'
                 >
-                  Turnkey Solutions
-
-                </Link>
+                 Turnkey Solutions 
+                </p>
               </li>
               <li>
-                <Link
-                  to='/our-portfolio/subpage2'
-                   className='block  text-md text-black    hover:text-orange-500'
+                <p
+                  onClick={() => handleClick(4)}
+                   className='block cursor-pointer text-md text-black    hover:text-orange-500'
                 >
                   Services
-
-                </Link>
+                </p>
               </li>
-              {/* Add more submenu links as needed */}
+                          {/* Add more submenu links as needed */}
             </ul>
           </li>
           <li
@@ -278,31 +280,29 @@ const Navbar = () => {
             onMouseLeave={closeDropdown}
           >
             <Link
-              to='/'
+              to='/principles'
               className='text-lg text-black hover:text-orange-500 font-semibold'
             >
               Principles
             </Link>
             <ul
-              className={`absolute font-semibold left-0   mt-0.5 w-64  py-5 bg-gray-100 border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50  ${
+              className={`absolute font-semibold left-0   mt-0.5 w-64  py-5 bg-white border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50  ${
                 isPrinciplesDropdownOpen ? 'block' : 'hidden'
               }`}
             >
               <li>
-                <Link
-                  to='/solutions/subpage1'
-                  className='block px-5 py-2 text-md text-black    hover:text-orange-500'
+                <a
+                  href='/principles/#mitsubishi-electric-india'className='block px-5 py-2 text-md text-black    hover:text-orange-500'
                 >
                     Mitsubishi Electric India
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to='/solutions/subpage2'
-                  className='block px-5 py-2 text-md text-black    hover:text-orange-500'
+                <a
+                  href='/principles/#phoenix-contact-beijer-sick' className='block px-5 py-2 text-md text-black    hover:text-orange-500'
                 >
                   Phoenix Contact Beijer Sick
-                </Link>
+                </a>
               </li>
               {/* Add more submenu links as needed */}
             </ul>
@@ -319,7 +319,7 @@ const Navbar = () => {
               Contact Us
             </Link>
             <ul
-              className={`absolute font-semibold left-0   mt-0.5 w-64 px-5 py-5  bg-gray-100 border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50   ${
+              className={`absolute font-semibold left-0   mt-0.5 w-64 px-5 py-5  bg-white border border-gray-300 flex flex-col gap-4 rounded-xl  shadow-lg z-50   ${
                 isContactDropdownOpen ? 'block' : 'hidden'
               }`}
             >
