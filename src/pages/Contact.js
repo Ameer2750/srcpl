@@ -11,8 +11,8 @@ const Contact = () => {
                 <h1 className='text-4xl text-orange-500 py-14 bg-gray-200 text-center font-semibold'>Contact Us</h1>
             </div>
 
-            <div className='flex flex-row justify-between items-center px-14 py-24 mx-14 '>
-                <div className='flex flex-col items-center bg-gray-100 px-14 py-14 gap-2'>
+            <div className='flex flex-row justify-between items-center  px-14 my-14 py-14 mx-14 '>
+                <div className='flex flex-col items-center bg-gray-100 px-8 py-10  gap-2'>
                     <CiLocationOn className='text-4xl ' />
                     <h1 className='text-xl font-semibold'>
                         Office Address
@@ -23,7 +23,7 @@ const Contact = () => {
                     <p className='text-gray-400'>31134.</p>
                 </div>
 
-                <div className='flex flex-col items-center bg-gray-100 px-24 py-14 gap-2'>
+                <div className='flex flex-col items-center bg-gray-100 px-14 py-10   gap-2'>
                     <FiPhoneCall className='text-3xl ' />
                     <h1 className='text-xl font-semibold'>
                         Phone Number
@@ -37,7 +37,7 @@ const Contact = () => {
 
                     </p>
                 </div>
-                <div className='flex flex-col items-center bg-gray-100 px-24 py-14 gap-2'>
+                <div className='flex flex-col items-center bg-gray-100 px-14 py-10  gap-2'>
                     <MdOutlineMailOutline className='text-4xl ' />
                     <h1 className='text-xl font-semibold'>
                         Email
