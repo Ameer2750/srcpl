@@ -9,6 +9,17 @@ const Navbar = (props) => {
   const [isPortfolioDropdownOpen,setPortfolioDropdownopen]= useState(false);
   const [isPrinciplesDropdownOpen,setPrinciplesDropdownopen]= useState(false);
   const [isContactDropdownOpen,setContactDropdownopen]= useState(false);
+
+
+  const[active,setActive]=useState(false);
+  window.addEventListener('scroll',function () {
+
+    if(this.window.scrollY>100){
+      setActive(true);
+    } else{
+      setActive(false);
+    }
+  })
   
   const navigate =  useNavigate()
   
@@ -55,7 +66,7 @@ const Navbar = (props) => {
   // const isHomepage = location.pathname === '/';
 
   return (
-    <div className='flex flex-row justify-between shadow my-0.5 items-center py-1 bg-[#f8f8f8]'>
+    <div className={`flex flex-row justify-between shadow my-0.5 items-center py-1 bg-[#f8f8f8] z-50 w-full ${active ? 'fixed -top-1' : ''}`}>
       <div className='w-64'>
         <img src={logo} className='bg-blue-950 h-20   py-3 mx-4' />
       </div>
@@ -324,12 +335,12 @@ const Navbar = (props) => {
               }`}
             >
               <li>
-                <Link
-                  to='/contact-us/subpage1'
+                <a
+                 href='/contact-us/#contact-us'
                    className='block  text-md text-black    hover:text-orange-500'
                 >
                   SRCPL Contact 
-                </Link>
+                </a>
               </li>
               {/* <li>
                 <Link

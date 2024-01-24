@@ -54,7 +54,7 @@ const Contact = () => {
             <div className='flex flex-row gap-14 my-20 mx-14'>
                 <div className='flex flex-col px-12 gap-14'>
                     <div className='flex flex-col gap-3'>
-                        <h1 className='text-5xl'>Contact <b className='text-orange-500'>Us</b></h1>
+                        <h1 id='contact-us'className='text-5xl'>Contact <b className='text-orange-500'>Us</b></h1>
                         <p className='text-gray-400'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </p>
                     </div>

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className=' bg-[#081528] pt-2 pb-1 px-14'>
 
 
-            <div className='flex flex-row justify-between border-b border-b-gray-500 py-14 '>
+            <div className='flex flex-row justify-between border-b border-b-gray-500 py-14 gap-14 '>
                 <div className='flex flex-col gap-5 mx-4'>
                     <div className='w-32'><img src={logo} className='' /></div>
                     <p className='text-md text-gray-500 hover:text-orange-500'>1234 North Avenue Luke Lane, South Bend, IN 360001</p>
@@ -22,7 +22,7 @@ const Footer = () => {
                     <h1 className='text-2xl text-white font-semibold'>Useful Links</h1>
                     <div className='flex flex-row gap-5'>
 
-                        <ul className='flex flex-col gap-5'>
+                        <ul className='flex flex-col  gap-5'>
                             <Link to='/about-us'>
                                 <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>About Us</li>
                             </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
                             {/* <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>Pricing</li> */}
                         </ul>
 
-                        <ul className='flex flex-col gap-5'>
+                        <ul className='flex flex-col  gap-5'>
                             <Link to='/our-portfolio'>
                                 <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Our Portfolio</li>
                             </Link>

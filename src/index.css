@@ -26,5 +26,13 @@ code {
   margin: 0 10px;
 }
 
+.activenav{
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  z-index: 10000099;
+}
 
 
