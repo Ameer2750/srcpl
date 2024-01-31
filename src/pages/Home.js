@@ -8,15 +8,21 @@ import CardWithImage from '../components/CardWithImage'
 import SimpleSlider from '../components/slider/SimpleSlider'
 import Slider from '../components/slider/Slider'
 import MultipleSlider from '../components/slider/MultipleSlider'
+import HeroComponent from '../components/HeroComponent'
 
 
 const Home = () => {
 
     return (
 
-        <div className='bg-[#f8f8f8] py-14'>
+        <div className='bg-[#f8f8f8] py-14 '>
+            <div className=''>
+                <HeroComponent />
+            </div>
+
             <div className='flex flex-col mx-14'>
                 <div className='flex flex-row justify-between  mx-4 '>
+
                     <div className='flex flex-col  gap-6  '>
                         <h2 id='whats-new' className='text-4xl font-bold text-orange-500 '>What's New</h2>
                         <div className='flex flex-col justify-center items-center gap-5'>
@@ -54,8 +60,8 @@ const Home = () => {
                         <div className='w-[50%]'>
                             <img src={bgImage} className='h-[500px]' />
                         </div>
-                        <div className='w-[50%] mt-14 flex flex-col gap-8 p-10 py-5 gap-5'>
-                            <h1  id='our-vision' className='text-4xl font-bold text-center text-orange-500 '>Our Vision</h1>
+                        <div className='w-[50%] mt-14 flex flex-col gap-8 p-10 py-5 '>
+                            <h1 id='our-vision' className='text-4xl font-bold text-center text-orange-500 '>Our Vision</h1>
                             <p className='text-lg font-md text-gray-400 leading-9 text-justify'>
                                 Envision a future where industries seamlessly synchronize with intelligent automation. We, at SRCPL, strive to be the driving force behind this transformation. By amalgamating precision engineering with cutting-edge technology, our vision is to empower industries to achieve unprecedented levels of productivity, sustainability, and growth.
                             </p>
@@ -139,7 +145,7 @@ const Home = () => {
 
                 </div>
                 <div className='my-10'>
-                    <button className=' px-10 py-3 text-md rounded-md mx-6 text-white font-semibold bg-orange-500 hover:bg-gray-400 '>View All</button>
+                    <button className=' px-10 py-3 text-md rounded-md mx-6 text-white font-semibold bg-orange-500  hover:bg-blue-950 hover:text-orange-500 '>View All</button>
                 </div>
 
 
@@ -155,7 +161,7 @@ const Home = () => {
                     <h1 className='text-4xl font-semibold '>Recent Blogs</h1>
                 </div>
                 <div className=''>
-                    <MultipleSlider  color='' />
+                    <MultipleSlider color='' />
                 </div>
             </div>
         </div>

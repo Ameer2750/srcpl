@@ -11,7 +11,9 @@ const Footer = () => {
 
             <div className='flex flex-row justify-between border-b border-b-gray-500 py-14 gap-14 '>
                 <div className='flex flex-col gap-5 mx-4'>
+                    <Link to='/'>
                     <div className='w-32'><img src={logo} className='' /></div>
+                    </Link>
                     <p className='text-md text-gray-500 hover:text-orange-500'>1234 North Avenue Luke Lane, South Bend, IN 360001</p>
                     <p className='text-md text-gray-500 hover:text-orange-500'>+0123456789</p>
                     <p className='text-md text-gray-500 hover:text-orange-500'>support@example.com</p>
@@ -58,7 +60,7 @@ const Footer = () => {
                     <div>
                         <input
                             type='text'
-                            name='name'
+                            name='email'
                             className=' text-black p-2 rounded-l-md'
                             placeholder='Your email address'
                         />

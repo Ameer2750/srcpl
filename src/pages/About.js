@@ -69,7 +69,7 @@ const About = () => {
             <MultipleSlider color="orange" />
           </div>
 
-          <div className='my-14'>
+          <div className='my-14 text-center'>
             <h1 id='awards-recognitions' className='text-3xl text-orange-500 font-semibold'>Awards & Recognitions</h1>
           
           </div>

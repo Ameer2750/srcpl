@@ -8,31 +8,31 @@ import { IoIosSearch } from "react-icons/io";
 
 const Header = () => {
     return (
-        <div className='flex flex-row justify-between items-center  shadow py-5 bg-[#f8f8f8]'>
+        <div className='flex flex-row justify-between items-center shadow py-5 bg-[#081528]'>
             <div className='flex flex-row justify-start items-center gap-14 mx-6'>
                 <div className='flex flex-row items-center gap-4'>
-                    <MdOutlineMailOutline className='text-4xl p-1  text-red-500 bg-gray-100 ' />
+                    <MdOutlineMailOutline className='text-4xl p-1  text-red-500 bg-[#081528] ' />
                     <div className='flex flex-col  items-start'>
-                        <h1 className='text-lg hover:text-orange-500 font-semibold'>E-Mail</h1>
-                        <p className='text-md '>support@gmail.com</p>
+                        <h1 className='text-lg text-white hover:text-orange-500 font-semibold'>E-Mail</h1>
+                        <p className='text-md text-white '>support@gmail.com</p>
                     </div>
                 </div>
 
                 <div className='flex flex-row items-center gap-4'>
-                    <CiLocationOn className='text-4xl p-1 text-red-500 bg-gray-100 ' />
+                    <CiLocationOn className='text-4xl p-1 text-red-500 bg-[#081528] ' />
 
                     <div>
-                        <h1 className='text-lg font-semibold hover:text-orange-500'>Location</h1>
-                        <p className='text-md '>8502 Preston Rd. Maine 98380</p>
+                        <h1 className='text-lg text-white font-semibold hover:text-orange-500'>Location</h1>
+                        <p className='text-md text-white '>8502 Preston Rd. Maine 98380</p>
                     </div>
                 </div>
 
                 <div className='flex flex-row items-center gap-4'>
-                    <FiPhoneCall className='text-4xl p-1 text-red-500 bg-gray-100 ' />
+                    <FiPhoneCall className='text-4xl p-1 text-red-500 bg-[#081528] ' />
 
                     <div >
-                        <h1 className='text-lg hover:text-orange-500 font-semibold'>Contact Number </h1>
-                        <p className=' '>+114 1234 259 </p>
+                        <h1 className='text-lg hover:text-orange-500 text-white font-semibold'>Contact Number </h1>
+                        <p className=' text-white'>+114 1234 259 </p>
                     </div>
                 </div>
             </div>
