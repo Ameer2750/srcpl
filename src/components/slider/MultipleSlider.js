@@ -71,7 +71,7 @@ const MultipleSlider = (props) => {
                                         <p>
                                             {data.para}
                                         </p>
-                                        <button className={`bg-${props.color || 'orange'}-500 text-white text-lg px-6 py-1 rounded-xl`}>{data.buttonText}</button>
+                                        <button className={`bg-${props.color || 'orange'}-500 hover:bg-blue-950 hover:text-orange-500 text-white text-lg px-6 py-1 rounded-xl`}>{data.buttonText}</button>
                                     </div>
                                 </div>
                             )

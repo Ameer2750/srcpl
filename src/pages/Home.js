@@ -50,7 +50,7 @@ const Home = () => {
                     <Card img={cardImg1} text={'Our Presence in the Market'} />
                 </div>
                 <div className='text-center -mt-24'>
-                    <button className=' px-12 py-3 text-md rounded-md mx-6 text-white font-semibold bg-orange-500 hover:bg-gray-400 '>View All</button>
+                    <button className=' px-12 py-3 text-md rounded-md mx-6 text-white font-semibold bg-orange-500 hover:bg-blue-950 hover:text-orange-500'>View All</button>
                 </div>
             </div>
 

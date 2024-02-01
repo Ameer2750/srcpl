@@ -31,11 +31,11 @@ const PortfolioCard = (props) => {
             <div className="max-w-md w-full">
                 <div className="card rounded-lg overflow-hidden shadow-lg" style={cardStyle}>
                     <div className="px-5 py-3 bg-opacity-75 flex justify-center my-24 ">
-                        <div className='flex flex-row items-center justify-center bg-black p-1 rounded-sm hover:bg-orange-500'>
-                            <div onClick={handleClick} className='flex flex-col justify-center items-center px-4 py-4 rounded-2xl  '>
-                                <div className='w-28 h-24 '>
-                                    <button className=' text-lg   font-semibold text-white  rounded-md '>{props.text}</button>
-                                    <IoIosArrowDroprightCircle className='  w-5 h-5 bg-orange-500 hover:bg-white mx-14 my-2 ' />
+                        <div className='flex flex-row items-center justify-center  p-1 bg-orange-500  hover:bg-blue-950  '>
+                            <div onClick={handleClick} className='flex flex-col  items-center px-4 py-4 rounded-2xl  '>
+                                <div className='w-32 h-18  '>
+                                    <button className=' text-lg font-semibold text-white hover:text-orange-500 rounded-2xl '>{props.text}</button>
+                                    {/* <IoIosArrowDroprightCircle className='  w-5 h-5 bg-orange-500 hover:bg-white mx-14 my-2 ' /> */}
                                 </div>
                             </div>
 

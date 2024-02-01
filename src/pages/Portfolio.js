@@ -21,9 +21,9 @@ const Portfolio = ({ handlePortfolioData }) => {
 
                 <div className='flex flex-row justify-between items-center mx-14 -mt-32 '>
                     <PortfolioCard handlePortfolioData={handlePortfolioData} no={0} img={folioImage} text={'Mitsubishi Products'} />
-                    <PortfolioCard handlePortfolioData={handlePortfolioData} no={1} img={folioImage} text={'Phoenix Contact Products'} />
+                    <PortfolioCard handlePortfolioData={handlePortfolioData} no={1} img={folioImage} text={'Phoenix Products'} />
                     <PortfolioCard handlePortfolioData={handlePortfolioData} no={2} img={folioImage} text={'Control Panels'} />
-                    <PortfolioCard handlePortfolioData={handlePortfolioData} no={3} img={folioImage} text={'Complete Turnkey Solutions'} />
+                    <PortfolioCard handlePortfolioData={handlePortfolioData} no={3} img={folioImage} text={'Turnkey Solutions'} />
                     <PortfolioCard handlePortfolioData={handlePortfolioData} no={4} img={folioImage} text={'Services'} />
                 </div>
 

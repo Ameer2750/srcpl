@@ -19,7 +19,7 @@ const CardWithImage = (props) => {
                 <p className='text-md text-gray-400 '>
                     {props.para}
                 </p>
-                <div className='flex flex-row  gap-2 text-orange-500 items-center  '>
+                <div className='flex flex-row hover:text-blue-950 gap-2 text-orange-500 items-center  '>
                     <button>Read More</button>
                     <MdArrowForwardIos className='my-2 text-lg' />
                 </div>
