@@ -12,14 +12,14 @@ const Portfolio = ({ handlePortfolioData }) => {
             </div>
             <div className=''>
 
-                <div className='flex flex-col justify-center mx-14 my-14 items-center '>
+                <div className='flex flex-col justify-center lg:mx-14 lg:px-0 px-10 my-14 items-center '>
 
                     <p className='text-lg text-justify text-gray-400  leading-9 '>
                         Welcome to SRCPL, your trusted partner in industrial automation. Our diverse product portfolio features cutting-edge solutions from renowned brands to elevate your manufacturing processes. Explore the essence of innovation through our key product categories:
                     </p>
                 </div>
 
-                <div className='flex flex-row justify-between items-center mx-14 -mt-32 '>
+                <div className='flex lg:flex-row flex-col justify-between items-center lg:mx-14 px-10 py-10 lg:-mt-32 lg:gap-0 gap-5 '>
                     <PortfolioCard handlePortfolioData={handlePortfolioData} no={0} img={folioImage} text={'Mitsubishi Products'} />
                     <PortfolioCard handlePortfolioData={handlePortfolioData} no={1} img={folioImage} text={'Phoenix Products'} />
                     <PortfolioCard handlePortfolioData={handlePortfolioData} no={2} img={folioImage} text={'Control Panels'} />

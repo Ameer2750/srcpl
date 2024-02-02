@@ -20,8 +20,8 @@ const Home = () => {
                 <HeroComponent />
             </div>
 
-            <div className='flex flex-col mx-14'>
-                <div className='flex flex-row justify-between  mx-4 '>
+            <div className='flex flex-col lg:mx-14 px-10'>
+                <div className='flex lg:flex-row lg:justify-between  lg:mx-4 '>
 
                     <div className='flex flex-col  gap-6  '>
                         <h2 id='whats-new' className='text-4xl font-bold text-orange-500 '>What's New</h2>
@@ -43,26 +43,26 @@ const Home = () => {
                     </div>
 
                 </div>
-                <div className='flex flex-row justify-between -mt-20 '>
+                <div className='flex lg:flex-row flex-col lg:gap-0 gap-5 py-10 lg:justify-between lg:-mt-20  '>
                     <Card img={cardImg1} text={'Our Mission'} />
                     <Card img={cardImg1} text={'Our Vision'} />
                     <Card img={cardImg1} text={'Our Goals'} />
                     <Card img={cardImg1} text={'Our Presence in the Market'} />
                 </div>
-                <div className='text-center -mt-24'>
+                <div className='text-center lg:-mt-24'>
                     <button className=' px-12 py-3 text-md rounded-md mx-6 text-white font-semibold bg-orange-500 hover:bg-blue-950 hover:text-orange-500'>View All</button>
                 </div>
             </div>
 
             <div className='bg-[#f8f8f8]'>
-                <div className='mx-14 my-14 py-10'>
-                    <div className='flex flex-row '>
-                        <div className='w-[50%]'>
-                            <img src={bgImage} className='h-[500px]' />
+                <div className='lg:mx-14 lg:my-14 px-10 py-10'>
+                    <div className='flex lg:flex-row flex-col '>
+                        <div className='lg:w-[50%]'>
+                            <img src={bgImage} className='lg:h-[500px] object-contain' />
                         </div>
-                        <div className='w-[50%] mt-14 flex flex-col gap-8 p-10 py-5 '>
+                        <div className='lg:w-[50%] lg:mt-14 flex flex-col gap-8 p-10 py-5 '>
                             <h1 id='our-vision' className='text-4xl font-bold text-center text-orange-500 '>Our Vision</h1>
-                            <p className='text-lg font-md text-gray-400 leading-9 text-justify'>
+                            <p className='text-lg font-md text-gray-400 lg:leading-9 text-justify'>
                                 Envision a future where industries seamlessly synchronize with intelligent automation. We, at SRCPL, strive to be the driving force behind this transformation. By amalgamating precision engineering with cutting-edge technology, our vision is to empower industries to achieve unprecedented levels of productivity, sustainability, and growth.
                             </p>
                         </div>
@@ -72,15 +72,15 @@ const Home = () => {
 
 
             <div className='bg-[#081528]'>
-                <div className='mx-14 my-32 py-32 flex flex-row justify-between items-center gap-28   '>
-                    <div className='w-[50%]'>
-                        <img src={bgImage2} className='rounded-lg h-[600px]' />
+                <div className='lg:mx-14 lg:my-32 lg:py-32 px-10 py-10 flex lg:flex-row flex-col lg:justify-between items-center lg:gap-28   '>
+                    <div className='lg:w-[50%]'>
+                        <img src={bgImage2} className='object-contain rounded-lg lg:h-[600px]' />
 
                     </div>
-                    <div className='w-[50%] text-white flex flex-col gap-7 -mt-4'>
+                    <div className='lg:w-[50%] text-white flex flex-col gap-7 lg:-mt-4 py-10'>
                         <div className='flex flex-col gap-3'>
                             {/* <h1 className='text-orange-500 text-md'>OUR PROCESS</h1> */}
-                            <h1 id='our-goals' className='text-4xl text-orange-500 text-md font-semibold'>Our Goals</h1>
+                            <h1 id='our-goals' className='text-4xl text-orange-500 text-md  font-semibold'>Our Goals</h1>
                         </div>
 
                         <div className='flex flex-col gap-8'>
@@ -88,7 +88,7 @@ const Home = () => {
                             <div className='flex flex-col gap-2'>
                                 {/* <h2 className='text-orange-500 text-md '>Step 01</h2> */}
                                 <h1 className='text-2xl font-semibold '>1. Comprehensive Industrial</h1>
-                                <p className='text-md font-normal leading-7 text-gray-400'> Automation
+                                <p className='text-md font-normal leading-7 text-justify text-gray-400'> Automation
                                     Embark on a journey with us as we deliver end-to-end automation solutions. From meticulously designed Shop Floor Control Panels to the intricacies of PLC, HMI, servo systems, SCADA, and the finesse of robotic applications - we leave no stone unturned.
 
                                 </p>
@@ -99,14 +99,14 @@ const Home = () => {
                                 {/* <h2 className='text-orange-500 text-md '>Step 02</h2> */}
                                 <h1 className='text-2xl font-semibold '>2. Integration with Cloud Technologies
                                 </h1>
-                                <p className='text-md font-normal text-gray-400 leading-7'>Witness the convergence of physical and digital realms with our cloud integration solutions. Real-time monitoring, predictive analytics, and data-driven decision-making become the backbone of your operations, linking the factory floor to the cloud seamlessly.
+                                <p className='text-md font-normal text-gray-400 text-justify leading-7'>Witness the convergence of physical and digital realms with our cloud integration solutions. Real-time monitoring, predictive analytics, and data-driven decision-making become the backbone of your operations, linking the factory floor to the cloud seamlessly.
 
                                 </p>
                             </div>
                             <div className='flex flex-col gap-2'>
                                 {/* <h2 className='text-orange-500 text-md '>Step 03</h2> */}
                                 <h1 className='text-2xl font-semibold '>3. Diversified Industry Solutions</h1>
-                                <p className='text-md font-normal text-gray-400 leading-7'>Step into the realm of tailored automation solutions for diverse sectors. Manufacturing, energy, pharmaceuticals, and beyond - our expertise extends to cater to the unique demands of each industry, ensuring optimal performance and efficiency.
+                                <p className='text-md font-normal text-gray-400 text-justify leading-7'>Step into the realm of tailored automation solutions for diverse sectors. Manufacturing, energy, pharmaceuticals, and beyond - our expertise extends to cater to the unique demands of each industry, ensuring optimal performance and efficiency.
                                 </p>
                             </div>
                         </div>
@@ -116,14 +116,14 @@ const Home = () => {
 
 
             <div>
-                <div className='flex flex-row justify-between items-center mx-14 my-20 px-14  gap-14 '>
+                <div className='flex lg:flex-row flex-col lg:justify-between items-center lg:mx-14 lg:my-20 lg:px-14 px-10 py-10  gap-14 '>
 
-                    <div className=' w-[50%] '>
+                    <div className=' lg:w-[50%] '>
                         {/* <h1 className='text-orange-500 text-md font-semibold'>OUR SERVICES</h1> */}
                         <h1 id='our-presence-in-the-market' className='text-4xl font-bold text-orange-500 '>Our Presence in the market</h1>
                     </div>
 
-                    <div className='w-[50%]'>
+                    <div className='lg:w-[50%]'>
                         <p className='text-lg leading-9 text-justify text-gray-400 '>
                             Steeped in a legacy of excellence, SRCPL has become synonymous with industrial automation prowess. Our solutions have catalyzed transformations across industries, reducing downtime, enhancing operational performance, and fostering growth. Explore our portfolio to witness the real-world impact of our automation expertise.
 
@@ -138,7 +138,7 @@ const Home = () => {
 
             <div className='flex flex-col justify-center items-center '>
 
-                <div className='flex flex-row justify-between items-center bg-[#f8f8f8] gap-8 p-10  mx-4'>
+                <div className='flex lg:flex-row flex-col  lg:justify-between items-center bg-[#f8f8f8] gap-8 p-10  lg:mx-4'>
                     <CardWithImage img={cardImage1} header={'INDUSTRY SOFTWARE'} subHeader={'Edgifying Machine Learning For Industria Thel IoT (IIot)'} para={'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'} />
                     <CardWithImage img={cardImage1} header={'MANUFACTURING'} subHeader={'FogHorn Adds Drag And Drop Analytic Authoring For IOT'} para={'Web development is the work involved in developing a website for the Internet or an intranet.'} />
                     <CardWithImage img={cardImage1} header={'MACHINE LEARNING'} subHeader={'FogHorn AchievesAWS Industrial Software Competency'} para={'Web development is the work involved in developing a website for the Internet or an intranet.'} />
@@ -155,7 +155,7 @@ const Home = () => {
                 <Slider />
             </div>
 
-            <div className='my-24 py-14 bg-orange-200'>
+            <div className='lg:my-24 lg:py-14 py-10 bg-orange-200'>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-md font-semibold text-orange-500 '>ARTICLES</h1>
                     <h1 className='text-4xl font-semibold '>Recent Blogs</h1>

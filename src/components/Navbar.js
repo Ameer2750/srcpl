@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
+import { FiMenu } from 'react-icons/fi';
+import { IoMdClose } from "react-icons/io";
+
 
 const Navbar = (props) => {
   const [isHomeDropdownOpen, setHomeDropdownopen] = useState(false);
@@ -9,6 +12,17 @@ const Navbar = (props) => {
   const [isPortfolioDropdownOpen, setPortfolioDropdownopen] = useState(false);
   const [isPrinciplesDropdownOpen, setPrinciplesDropdownopen] = useState(false);
   const [isContactDropdownOpen, setContactDropdownopen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
 
   const [active, setActive] = useState(false);
@@ -66,7 +80,7 @@ const Navbar = (props) => {
   // const isHomepage = location.pathname === '/';
 
   return (
-    <div className={`flex flex-row justify-between my-0.5 items-center py-4 bg-[#081528] z-50 w-full ${active ? 'fixed -top-1' : ''}`}>
+    <div className={`flex flex-row justify-between px-5 my-0.5 items-center py-4 bg-[#081528] z-50 w-full ${active ? 'fixed -top-1' : ''}`}>
 
 
       <Link to='/'>
@@ -75,9 +89,9 @@ const Navbar = (props) => {
         </div>
       </Link>
 
-
+      {/* large screen menu */}
       <div className='my-5'>
-        <ul className='flex flex-row gap-14 justify-between items-center'>
+        <ul className='lg:flex lg:flex-row lg:gap-14 lg:justify-between lg:items-center hidden'>
           <li
             className='relative group'
             onMouseEnter={homeToggleDropdown}
@@ -96,44 +110,44 @@ const Navbar = (props) => {
                 }`}
             >
               <li>
-                <a
-                  href='/#whats-new'
+                <Link
+                  to='/#whats-new'
                   className='block  text-sm text-black  border-b pb-4 border-gray-200  hover:text-orange-500'
                 >
                   What's New
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/#our-mission'
+                <Link
+                  to='/#our-mission'
                   className='block text-sm text-black   border-b pb-4 border-gray-200  hover:text-orange-500'
                 >
                   Our Mission
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/#our-vision'
+                <Link
+                  to='/#our-vision'
                   className='block  text-sm text-black pb-4  border-b border-gray-200 hover:text-orange-500'
                 >
                   Our Vision
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/#our-goals'
+                <Link
+                  to='/#our-goals'
                   className='block text-sm text-black pb-4 border-b border-gray-200 hover:text-orange-500  '
                 >
                   Our Goals
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/#our-presence-in-the-market'
+                <Link
+                  to='/#our-presence-in-the-market'
                   className='block text-sm text-black  hover:text-orange-500  '
                 >
                   Our Presence in the market
-                </a>
+                </Link>
               </li>
               {/* Add more submenu links as needed */}
             </ul>
@@ -155,36 +169,36 @@ const Navbar = (props) => {
                 }`}
             >
               <li>
-                <a
-                  href='/about-us/#about-srcpl'
+                <Link
+                  to='/about-us/#about-srcpl'
                   className='block  text-sm text-black pb-4  border-b border-gray-200 hover:text-orange-500'
                 >
                   About SRCPL
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/about-us/#team-overview'
+                <Link 
+                to='/about-us/#team-overview'
                   className='block  text-sm text-black pb-4  border-b border-gray-200 hover:text-orange-500'
                 >
                   Team Overview
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/about-us/#sr-group-overview'
+                <Link
+                  to='/about-us/#sr-group-overview'
                   className='block  text-sm text-black pb-4  border-b border-gray-200 hover:text-orange-500'
                 >
                   S.R Group Overview
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/about-us/#awards-recognitions'
+                <Link
+                  to='/about-us/#awards-recognitions'
                   className='block  text-sm text-black  hover:text-orange-500'
                 >
                   Awards & Recognitions
-                </a>
+                </Link>
               </li>
               {/* Add more submenu links as needed */}
             </ul>
@@ -207,27 +221,18 @@ const Navbar = (props) => {
                 }`}
             >
               <li>
-                <a
-                  href='/solutions/#solutions'
+                <Link
+                  to='/solutions/#solutions'
                   className='block  text-sm text-black   hover:text-orange-500'
                 >
                   Overall Solutions
-                </a>
-              </li>
-              {/* <li>
-                <Link
-                  to='/solutions/subpage2'
-                   className='block  text-sm text-black    hover:text-orange-500'
-                >
-                  Subpage 2
                 </Link>
-              </li> */}
-              {/* Add more submenu links as needed */}
+              </li>
+
             </ul>
           </li>
 
 
-          {/* ... Other menu items ... */}
           <li
             className='relative group'
             onMouseEnter={portfolioToggleDropdown}
@@ -302,20 +307,20 @@ const Navbar = (props) => {
                 }`}
             >
               <li>
-                <a
-                  href='/principles/#mitsubishi-electric-india'
+                <Link
+                  to='/principles/#mitsubishi-electric-india'
                   className='block py-1 mx-4 text-sm text-black pb-4  border-b border-gray-200 hover:text-orange-500'
                 >
                   Mitsubishi Electric India
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/principles/#phoenix-contact-beijer-sick'
+                <Link
+                  to='/principles/#phoenix-contact-beijer-sick'
                   className='block  py-1 mx-4 text-sm text-black   hover:text-orange-500'
                 >
                   Phoenix Contact Beijer Sick
-                </a>
+                </Link>
               </li>
               {/* Add more submenu links as needed */}
             </ul>
@@ -336,31 +341,57 @@ const Navbar = (props) => {
                 }`}
             >
               <li>
-                <a
-                  href='/contact-us/#contact-us'
+                <Link
+                  to='/contact-us/#contact-us'
                   className='block  text-sm text-black     hover:text-orange-500'
                 >
                   SRCPL Contact
-                </a>
-              </li>
-              {/* <li>
-                <Link
-                  to='/contact-us/subpage2'
-                   className='block text-sm text-black    hover:text-orange-500'
-                >
-                  Subpage 2
                 </Link>
-              </li> */}
-              {/* Add more submenu links as needed */}
+              </li>
             </ul>
           </li>
         </ul>
       </div>
+      {/* mobile menu */}
 
-      <Link to='/contact-us'>
-        <button className='bg-orange-500 hover:bg-blue-950 px-4 mx-4 py-2 my-4 rounded-md text-sm text-white hover:text-orange-500 font-normal'>
+      <div className={`lg:hidden fixed left-0  bg-white text-black z-10 top-0 h-full w-64 ${menuOpen ? 'block' : 'hidden'}`}>
+          <div className='flex flex-row justify-end mx-4 pt-4 '>
+          <IoMdClose color='black' className='text-xl  'onClick={closeMenu} />
+          </div>
+
+        <ul className="flex flex-col items-start px-4 py-8 space-y-4 ">
+          <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
+            <Link to='/'>Home</Link>
+          </li>
+          <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
+          <Link to='/about-us'>About Us</Link>
+          </li>
+          <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
+            <Link to='/solutions'>Solutions</Link>
+          </li>
+          <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
+            <Link to='/our-portfolio'>Our Portfolio</Link>
+          </li>
+          <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
+            <Link to='/principles'>Principles</Link>
+          </li>
+          <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
+            <Link to='/contact-us'>Contact Us</Link>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div className="lg:hidden">
+        <FiMenu className="text-white text-3xl cursor-pointer  " 
+        onClick={toggleMenu}
+        
+          />
+      </div>
+
+      <Link to='/contact-us' className='lg:bg-orange-500 lg:hover:bg-blue-950 lg:px-4 lg:mx-4 lg:py-2 lg:my-4 lg:rounded-md lg:text-sm lg:text-white lg:hover:text-orange-500 lg:font-normal hidden lg:block '>
           Inquiry Now
-        </button>
       </Link>
     </div>
   );

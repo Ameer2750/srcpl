@@ -10,8 +10,8 @@ import { Outlet } from 'react-router-dom';
 
 const RootLayout = ({handlePortfolioData}) => {
     return (
-        <div>
-            <div><Header /></div>
+        <div className='overflow-x-hidden'>
+            <div ><Header/></div>
             <div><Navbar handlePortfolioData={handlePortfolioData} /></div>
             <div><Outlet /></div>
             <Footer  />

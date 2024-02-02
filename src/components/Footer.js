@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className=' bg-[#081528] pt-2 pb-1 px-14'>
+        <div className=' bg-[#081528] lg:pt-2 lg:pb-1 lg:px-14 px-10'>
 
 
-            <div className='flex flex-row justify-between border-b border-b-gray-500 py-14 gap-14 '>
+            <div className='flex lg:flex-row flex-col lg:justify-between border-b border-b-gray-500 py-14 gap-14 '>
                 <div className='flex flex-col gap-5 mx-4'>
                     <Link to='/'>
-                    <div className='w-32'><img src={logo} className='' /></div>
+                        <div className='w-32'><img src={logo} className='' /></div>
                     </Link>
                     <p className='text-md text-gray-500 hover:text-orange-500'>1234 North Avenue Luke Lane, South Bend, IN 360001</p>
                     <p className='text-md text-gray-500 hover:text-orange-500'>+0123456789</p>
@@ -20,11 +20,11 @@ const Footer = () => {
                     <p className='text-md text-orange-500 '>www.vision.iqonicdesign.com</p>
                 </div>
 
-                <div className='flex flex-col gap-5 '>
+                <div className='flex flex-col gap-5 lg:px-0 px-4 '>
                     <h1 className='text-2xl text-white font-semibold'>Useful Links</h1>
-                    <div className='flex flex-row gap-5'>
+                    <div className='flex lg:flex-row flex-col gap-5'>
 
-                        <ul className='flex flex-col  gap-5'>
+                        <ul className='flex flex-col  gap-5  '>
                             <Link to='/about-us'>
                                 <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>About Us</li>
                             </Link>
@@ -37,7 +37,7 @@ const Footer = () => {
                             {/* <li className='text-md text-gray-500 fond-semibold hover:text-orange-500'>Pricing</li> */}
                         </ul>
 
-                        <ul className='flex flex-col  gap-5'>
+                        <ul className='flex flex-col  gap-5  '>
                             <Link to='/our-portfolio'>
                                 <li className='text-md fond-semibold text-gray-500 hover:text-orange-500'>Our Portfolio</li>
                             </Link>
@@ -70,11 +70,11 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='flex flex-row  justify-between items-center  py-5 mx-4'>
+            <div className='flex lg:flex-row flex-col  lg:justify-between items-center  py-5 lg:mx-4 gap-4 px-10'>
 
                 <p className='text-gray-500 '>© 2024 vizion All Rights Reserved.</p>
 
-                <div className='flex flex-row  gap-7 '>
+                <div className='flex flex-row   gap-7 '>
                     <FaFacebook color='white' className='text-2xl  hover:bg-orange-500 p-1 ' />
                     <FaSquareXTwitter color='white' className='text-2xl  hover:bg-orange-500 p-1' />
                     <FaInstagram color='white' className='text-2xl  hover:bg-orange-500 p-1' />

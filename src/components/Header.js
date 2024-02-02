@@ -8,7 +8,7 @@ import { IoIosSearch } from "react-icons/io";
 
 const Header = () => {
     return (
-        <div className='flex flex-row justify-between items-center shadow py-5 bg-[#081528]'>
+        <div className=' lg:flex lg:flex-row lg:justify-between lg:items-center lg:shadow lg:py-5 lg:bg-[#081528] hidden'>
             <div className='flex flex-row justify-start items-center gap-14 mx-6'>
                 <div className='flex flex-row items-center gap-4'>
                     <MdOutlineMailOutline className='text-4xl p-1  text-red-500 bg-[#081528] ' />

@@ -91,16 +91,16 @@ const data = [{
 const Solutions = (props) => {
   return (
     <div className=' flex bg-[#f8f8f8] flex-col gap-2   justify-center  py-6 '>
-      <div id='solutions'  className='text-4xl bg-gray-200 my-14 py-14 text-orange-500 font-semibold text-center my-10'>
+      <div id='solutions'  className='text-4xl bg-gray-200 my-14 py-14 text-orange-500 font-semibold text-center '>
         {data[0].header}
       </div>
 
-      <div className='text-lg   text-gray-400  mb-6 mx-14 text-justify'>
+      <div className='text-lg   text-gray-400  lg:mb-6 lg:mx-14 lg:px-0 px-10 text-justify'>
         {data[0].para}
       </div>
 
-      <div className='px-36 mx-14 py-10'>
-        <img src={pageImage} />
+      <div className='lg:px-36 lg:mx-14 px-10 py-10'>
+        <img src={pageImage} className='object-contain' />
       </div>
 
 
@@ -111,7 +111,7 @@ const Solutions = (props) => {
           <div key={i.id}>
 
             <div>
-              <div className='p-5 mx-24'>
+              <div className='lg:p-5 px-10 lg:mx-24'>
                 <div className='text-2xl font-semibold mb-2'>
                   <p>{i.subHeader}</p>
                 </div>

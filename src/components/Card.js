@@ -14,7 +14,7 @@ const Card = (props) => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center mx-4">
+        <div className="lg:min-h-screen flex flex-col lg:flex-row  lg:items-center items-end lg:justify-center lg:gap-0 gap-5 lg:mx-4">
             <div className="max-w-md w-full">
                 <div className="card rounded-lg overflow-hidden shadow-lg" style={cardStyle}>
                     <div className="px-5 py-3 bg-opacity-75 flex justify-center my-48 ">

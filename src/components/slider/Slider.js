@@ -20,11 +20,11 @@ const Slider = () => {
     };
 
     return (
-        <div className='  bg-[#081528] p-24 mx-14'>
+        <div className='  bg-[#081528] lg:p-24 lg:mx-14 px-10 py-10'>
             <SimpleSlider {...settings}>
                 <div >
-                    <div className='flex flex-row justify-between items-center  gap-14'>
-                        <div className='w-[50%]'> 
+                    <div className='flex lg:flex-row flex-col lg:justify-between items-center  gap-14'>
+                        <div className='lg:w-[50%]'> 
                             <img
                                 style={{ width: '100%', height: '400px', objectFit: 'contain' }}
                                 src={img}
@@ -32,7 +32,7 @@ const Slider = () => {
                                 className=''
                             />
                         </div>
-                        <p className='text-gray-400 text-3xl text-start font-normal italic w-[50%]'>
+                        <p className='text-gray-400 text-3xl text-start font-normal text-justify italic lg:w-[50%]'>
                             “ There are many variations of passages of Lorem Ipsum
                             available, but the majority have suffered alteration in some
                             form, by injected humour, or randomised words which don't look
@@ -44,8 +44,8 @@ const Slider = () => {
                 </div>
 
                 <div >
-                    <div className='flex flex-row justify-between items-center  gap-14'>
-                        <div className='w-[50%]'> 
+                    <div className='flex lg:flex-row flex-col  lg:justify-between items-center  gap-14'>
+                        <div className='lg:w-[50%]'> 
                             <img
                                 style={{ width: '100%', height: '400px', objectFit: 'contain' }}
                                 src={img2}
@@ -53,7 +53,7 @@ const Slider = () => {
                                 className=''
                             />
                         </div>
-                        <p className='text-gray-400 text-3xl text-start font-normal italic w-[50%]'>
+                        <p className='text-gray-400 text-3xl text-start font-normal text-justify italic lg:w-[50%]'>
                             “ There are many variations of passages of Lorem Ipsum
                             available, but the majority have suffered alteration in some
                             form, by injected humour, or randomised words which don't look
@@ -67,8 +67,8 @@ const Slider = () => {
 
 
                 <div >
-                    <div className='flex flex-row justify-between items-center  gap-14'>
-                        <div className='w-[50%]'> 
+                    <div className='flex lg:flex-row flex-col lg:justify-between items-center  gap-14'>
+                        <div className='lg:w-[50%]'> 
                             <img
                                 style={{ width: '100%', height: '400px', objectFit: 'contain' }}
                                 src={img2}
@@ -76,7 +76,7 @@ const Slider = () => {
                                 className=''
                             />
                         </div>
-                        <p className='text-gray-400 text-3xl text-start font-normal italic w-[50%]'>
+                        <p className='text-gray-400 text-3xl lg:text-start text-justify font-normal italic lg:w-[50%]'>
                             “ There are many variations of passages of Lorem Ipsum
                             available, but the majority have suffered alteration in some
                             form, by injected humour, or randomised words which don't look
