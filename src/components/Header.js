@@ -4,17 +4,19 @@ import { CiLocationOn } from "react-icons/ci";
 import { FiPhoneCall } from "react-icons/fi";
 import { IoIosSearch } from "react-icons/io";
 
-
-
 const Header = () => {
+
+
+
+
     return (
-        <div className=' lg:flex lg:flex-row lg:justify-between lg:items-center lg:shadow lg:py-5 lg:bg-[#081528] hidden'>
+        <div className=' lg:flex lg:flex-row lg:justify-between lg:items-center  lg:shadow lg:py-2 lg:bg-[#02111e] hidden'>
             <div className='flex flex-row justify-start items-center gap-14 mx-6'>
                 <div className='flex flex-row items-center gap-4'>
                     <MdOutlineMailOutline className='text-4xl p-1  text-red-500 bg-[#081528] ' />
                     <div className='flex flex-col  items-start'>
-                        <h1 className='text-lg text-white hover:text-orange-500 font-semibold'>E-Mail</h1>
-                        <p className='text-md text-white '>support@gmail.com</p>
+                        {/* <h1 className='text-lg text-white hover:text-orange-500 font-semibold'>E-Mail</h1> */}
+                        <p className='text-md text-white hover:text-orange-500 '>ssr@srautomations.com</p>
                     </div>
                 </div>
 
@@ -22,8 +24,9 @@ const Header = () => {
                     <CiLocationOn className='text-4xl p-1 text-red-500 bg-[#081528] ' />
 
                     <div>
-                        <h1 className='text-lg text-white font-semibold hover:text-orange-500'>Location</h1>
-                        <p className='text-md text-white '>8502 Preston Rd. Maine 98380</p>
+                        {/* <h1 className='text-lg text-white font-semibold hover:text-orange-500'>Location</h1> */}
+                        <p className='text-md text-white hover:text-orange-500 '>S. R. GROUPS
+                            Hyderabad – 500055 Telangana, India </p>
                     </div>
                 </div>
 
@@ -31,15 +34,15 @@ const Header = () => {
                     <FiPhoneCall className='text-4xl p-1 text-red-500 bg-[#081528] ' />
 
                     <div >
-                        <h1 className='text-lg hover:text-orange-500 text-white font-semibold'>Contact Number </h1>
-                        <p className=' text-white'>+114 1234 259 </p>
+                        {/* <h1 className='text-lg hover:text-orange-500 text-white font-semibold'>Contact Number </h1> */}
+                        <p className=' text-white hover:text-orange-500'>+91 9100994182</p>
                     </div>
                 </div>
             </div>
-            <div className='flex flex-row text-white gap-2 px-6 py-2 rounded-md mx-4  items-center justify-end bg-orange-500 hover:bg-blue-950 hover:text-orange-500 '>
-                <IoIosSearch className='text-2xl'/>
+            <div className='flex flex-row text-white gap-2 px-4 py-2 rounded-md mx-8  items-center justify-end bg-orange-500 hover:bg-white hover:text-black'>
+                <IoIosSearch className='text-2xl' />
 
-                <button className='font-semibold text-lg text-end '>Search</button>
+                <button className='font-semibold text-md text-end '>Search</button>
             </div>
 
 

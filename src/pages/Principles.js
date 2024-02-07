@@ -10,8 +10,8 @@ const Principles = () => {
       <div className='text-center '>
         <h1 id='mitsubishi-electric-india'className='text-4xl text-orange-500 py-14 bg-gray-200 text-center font-semibold'>Principles</h1>
       </div>
-      <div className='my-24  flex flex-col lg:gap-24 py-14   '>
-        <div className='flex lg:flex-row flex-col lg:justify-between py-24   bg-blue-950 '>
+      <div className='my-24  flex flex-col lg:gap-24 lg:py-14   '>
+        <div className='flex lg:flex-row flex-col lg:justify-between py-24    bg-blue-950 '>
           <img src={image1} className='lg:mx-7  lg:my-7 lg:px-0 px-10 lg:w-[50%] lg:h-[450px]' />
           <div className=''>
             <h1 className='lg:w-[50%] lg:mx-32 lg:px-0 px-10 py-14 text-xl text-orange-500 font-semibold lg:text-start text-center'>Mitsubishi Electric India</h1>
@@ -38,7 +38,7 @@ const Principles = () => {
 
         </div>
 
-        <div className='flex lg:flex-row flex-col lg:justify-between py-24 lg:px-6   bg-blue-950  '>
+        <div className='flex lg:flex-row flex-col lg:justify-between lg:py-24 lg:pb-10 pb-10 lg:px-6   bg-blue-950  '>
           <div>
             <h1 id='phoenix-contact-beijer-sick' className='lg:w-[50%] lg:mx-32 py-14 lg:px-0 px-10 text-xl text-orange-500 lg:text-start text-center font-semibold'>Pheonix Contact Beijer Sick</h1>
             <div className='lg:mx-8 lg:px-0 px-10 text-justify flex flex-col gap-5 leading-8 lg:-mt-6  text-gray-400 font-semibold text-md  '>

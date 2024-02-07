@@ -54,25 +54,31 @@ const Footer = () => {
 
 
                 </div>
-                <div className='flex flex-col gap-5 mx-4'>
+                <div className='flex flex-col gap-5 lg:mx-4 lg:px-0'>
                     <h1 className='text-2xl text-white font-semibold'>Subscribe</h1>
                     <p className='text-md font-semibold text-gray-500'>It’s The Bright One, It’s The Right One, That’s Newsletter.</p>
-                    <div>
-                        <input
+                    <div className=' flex lg:flex-row flex-col  lg:gap-0 gap-2 '>
+                        <div>                        <input
                             type='text'
                             name='email'
-                            className=' text-black p-2 rounded-l-md'
+                            className=' text-black p-2  lg:rounded-l-md '
                             placeholder='Your email address'
+
                         />
-                        <button className='bg-orange-500 text-white hover:text-orange-500 hover:bg-black p-2 rounded-r-md font-semibold'>Submit</button>
+                        </div>
+
+                        <div>
+                            <button className='bg-orange-500   text-white hover:text-orange-500 hover:bg-blue-950 p-2  lg:rounded-r-md   font-semibold'>Submit</button>
+                        </div>
+
                     </div>
 
                 </div>
             </div>
 
-            <div className='flex lg:flex-row flex-col  lg:justify-between items-center  py-5 lg:mx-4 gap-4 px-10'>
+            <div className='flex lg:flex-row flex-col  lg:justify-between lg:items-start  items-center  py-5  gap-4 lg:px-0 px-10'>
 
-                <p className='text-gray-500 '>© 2024 vizion All Rights Reserved.</p>
+                <p className='text-gray-500 text-start '>© 2024 vizion All Rights Reserved.</p>
 
                 <div className='flex flex-row   gap-7 '>
                     <FaFacebook color='white' className='text-2xl  hover:bg-orange-500 p-1 ' />
