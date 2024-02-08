@@ -12,11 +12,13 @@ const ProductsCard = (props) => {
     return (
         <div className='flex flex-col items-center justify-between gap-8 rounded-xl px-10 py-10  bg-white shadow'>
 
-            <div className='flex flex-col gap-10'>
+
+            <div className='flex flex-col  gap-10'>
                 <div className='bg-white  '>
-                    <img src={props.img} className='object-contain w-72  rounded-tl-3xl rounded-br-3xl border-4 border-y-orange-500 border-x-orange-500' />
+                    <img src={props.img} className='object-contain w-72  rounded-tl-3xl rounded-br-3xl border-4 border-y-orange-500 border-x-orange-500'
+                     onClick={handleClick} />
                 </div>
-                <div className='flex flex-col gap-10'>
+                <div className='flex flex-col  gap-10'>
                     <h1
                         onClick={handleClick}
 

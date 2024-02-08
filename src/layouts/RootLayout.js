@@ -8,11 +8,11 @@ import { Outlet } from 'react-router-dom';
 
 
 
-const RootLayout = ({handlePortfolioData}) => {
+const RootLayout = ({}) => {
     return (
         <div className='overflow-x-hidden'>
             <div ><Header/></div>
-            <div><Navbar handlePortfolioData={handlePortfolioData} /></div>
+            <div><Navbar /></div>
             <div><Outlet /></div>
             <Footer  />
         </div>
