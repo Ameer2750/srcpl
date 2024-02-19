@@ -176,29 +176,30 @@ const Navbar = (props) => {
       </div>
       {/* mobile menu */}
 
-      <div className={`lg:hidden fixed left-0  bg-white text-black z-10 hrefp-0 h-full w-64 ${menuOpen ? 'block' : 'hidden'}`}>
+      <div className={`lg:hidden fixed left-0 top-0 h-screen bg-white text-black z-10 hrefp-0 h-full w-64 ${menuOpen ? 'block' : 'hidden'}`}>
         <div className='flex flex-row justify-end mx-4 pt-4 '>
           <IoMdClose color='black' className='text-xl  ' onClick={closeMenu} />
         </div>
 
         <ul className="flex flex-col items-start px-4 py-8 space-y-4 ">
+          
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
-            <a href='/'>Home</a>
+            <Link to ='/'>Home</Link>
           </li>
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
-            <a href='/about-us'>About Us</a>
+            <Link to='/about-us'>About Us</Link>
           </li>
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
-            <a href='/solutions'>Solutions</a>
+            <Link to='/solutions'>Solutions</Link>
           </li>
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
-            <a href='/our-portfolio'>Our Portfolio</a>
+            <Link to ='/products'>Products</Link>
           </li>
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
-            <a href='/principles'>Principles</a>
+            <Link to ='/principles'>Principles</Link>
           </li>
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
-            <a href='/contact-us'>Contact Us</a>
+            <Link to  href='/contact-us'>Contact Us</Link>
           </li>
         </ul>
       </div>
@@ -206,7 +207,7 @@ const Navbar = (props) => {
 
 
       <div className="lg:hidden">
-        <FiMenu className="text-white text-3xl cursor-pointer  "
+        <FiMenu className="text-black text-3xl cursor-pointer  "
           onClick={ToggleMenu}
 
         />

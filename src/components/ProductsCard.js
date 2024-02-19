@@ -1,23 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 const ProductsCard = (props) => {
+    console.log('props: ', props);
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+
+    })
 
     const navigate = useNavigate();
     const handleClick = () => {
-        props.handleProductsData(props.no)
-        navigate('/products-page')
+        // props.handleProductsData(props.no)
+        navigate(`/products-page/${props.no}`)
     }
     return (
-        <div className='flex flex-col items-center justify-between gap-8 rounded-xl px-10 py-10  bg-white shadow'>
+        <div data-aos='zoom-in' data-aos-delay='300' data-aos-once='true' className='flex flex-col items-center justify-between gap-8 rounded-xl px-10 py-10  bg-white shadow'>
 
 
             <div className='flex flex-col  gap-10'>
                 <div className='bg-white  '>
-                    <img src={props.img} className='object-contain w-72  rounded-tl-3xl rounded-br-3xl border-4 border-y-orange-500 border-x-orange-500'
-                     onClick={handleClick} />
+                  
+
+                        <img src={props.img} className='object-contain w-72  rounded-tl-3xl rounded-br-3xl border-4 border-y-orange-500 border-x-orange-500'
+                            onClick={handleClick} />
+                    
                 </div>
+
                 <div className='flex flex-col  gap-10'>
                     <h1
                         onClick={handleClick}

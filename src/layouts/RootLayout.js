@@ -8,13 +8,13 @@ import { Outlet } from 'react-router-dom';
 
 
 
-const RootLayout = ({}) => {
+const RootLayout = () => {
     return (
         <div className='overflow-x-hidden'>
-            <div ><Header/></div>
-            <div><Navbar /></div>
-            <div><Outlet /></div>
-            <Footer  />
+            <Header/>
+            <Navbar />
+            <Outlet />
+            <Footer/>
         </div>
     );
 }
