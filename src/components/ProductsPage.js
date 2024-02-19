@@ -48,7 +48,7 @@ const ProductsPage = (props, { handleProductsData }) => {
                 </div>
             }
 
-            <div  data-aos='fade-down' data-aos-delay='300' className='grid lg:grid-cols-3 grid-cols-1 gap-5 py-20 mx-14'>
+            <div  data-aos='fade-down' data-aos-delay='300' data-aos-once='true'className='grid lg:grid-cols-3 grid-cols-1 gap-5 py-20 mx-14'>
 
                 {data.subContent && data.subContent.map((i) => {
                     console.log('i: ', i);
