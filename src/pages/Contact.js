@@ -23,7 +23,7 @@ const Contact = () => {
                 <h1 className='text-center text-4xl hover:text-orange-500 text-white font-semibold py-14'>Contact Us</h1>
             </div>
 
-            <div data-aos='fade-down' data-aos-once='true'className='grid grid-cols-3  lg:gap-10  items-center  lg:px-14 lg:my-14 lg:py-14 lg:mx-14 px-10 py-10 gap-5'>
+            <div data-aos='fade-down' data-aos-once='true'className='grid lg:grid-cols-3 grid-cols-1  lg:gap-10  items-center  lg:px-14 lg:my-14 lg:py-14 lg:mx-14 px-10 py-10 gap-5'>
                 <div className='flex flex-col items-center bg-gray-100 px-8  py-10  gap-2 hover:shadow-2xl shadow'>
                     <CiLocationOn className='text-4xl ' />
                     <h1 className='text-xl font-semibold'>
