@@ -48,12 +48,12 @@ const ProductsPage = (props, { handleProductsData }) => {
                 </div>
             }
 
-            <div  data-aos='fade-down' data-aos-delay='300' data-aos-once='true'className='grid lg:grid-cols-3 grid-cols-1 gap-5 py-20 mx-14'>
+            <div className='grid lg:grid-cols-3  grid-cols-1 gap-5 py-20 mx-14'>
 
                 {data.subContent && data.subContent.map((i) => {
                     console.log('i: ', i);
                     return (
-                        <div className='flex flex-col justify-between  items-center  rounded-xl px-10 py-10  bg-white shadow'>
+                        <div data-aos='fade-down' data-aos-delay='300' data-aos-once='true' className='flex flex-col justify-between  items-center  rounded-xl px-10 py-10  hover:shadow-2xl  bg-white shadow'>
 
                             <div className='flex flex-col gap-10'>
                                 <Link to={i.buttonLink}>

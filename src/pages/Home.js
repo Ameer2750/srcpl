@@ -34,13 +34,8 @@ const Home = () => {
                     <div className='flex flex-col  gap-6  '>
                         <h2 id='whats-new' className='text-4xl text-center font-bold text-orange-500 '>What's New</h2>
                         <div className='flex flex-col justify-center items-center gap-5'>
-                            <p className='text-lg text-gray-400 '>Discover the latest breakthroughs in industrial automation solutions at SRCPL. We are thrilled to unveil recent advancements that underscore our commitment to staying at the forefront of technology. From enhanced Shop Floor Control Panels to innovative Cloud Integrations, our updates are designed to elevate industries to new heights.
-                                Our Mission
-                            </p>
-                            <p className='text-lg text-gray-400 text-justify leading-9'>
-                                At the heart of [SRCPL]'s mission is a dedication to crafting bespoke factory automation solutions. From the intricacies of control panels to the expansiveness of cloud-based systems, our mission is to redefine industrial processes, making them more efficient, intelligent, and adaptive.
-
-                            </p>
+                            <p className='text-lg text-gray-400 '>Discover the latest breakthroughs in industrial automation solutions at SRCPL. We are thrilled to unveil recent advancements that underscore our commitment to staying at the forefront of technology. From enhanced Shop Floor Control Panels to innovative Cloud Integrations, our updates are designed to elevate industries to new heights.</p>
+                           
                         </div>
                         <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-5 py-10 lg:px-0 px-10 '>
                             <div data-aos='fade-left' data-aos-delay='300' data-aos-once='true' className='flex flex-col gap-5'>
@@ -166,7 +161,7 @@ const Home = () => {
 
             <div data-aos='fade-down' data-aos-delay='300' data-aos-once='true' className='flex flex-col justify-center items-center '>
 
-                <div className='flex lg:flex-row flex-col  lg:justify-between items-center bg-[#f8f8f8] gap-8 p-10  lg:mx-4'>
+                <div className='grid lg:grid-cols-3 grid-cols-1  lg:justify-between items-center  bg-[#f8f8f8] gap-8 p-10  lg:mx-4'>
                     <CardWithImage img={cardImage1} header={'INDUSTRY SOFTWARE'} subHeader={'Edgifying Machine Learning For Industria Thel IoT (IIot)'} para={'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'} />
                     <CardWithImage img={cardImage1} header={'MANUFACTURING'} subHeader={'FogHorn Adds Drag And Drop Analytic Authoring For IOT'} para={'Web development is the work involved in developing a website for the Internet or an intranet.'} />
                     <CardWithImage img={cardImage1} header={'MACHINE LEARNING'} subHeader={'FogHorn AchievesAWS Industrial Software Competency'} para={'Web development is the work involved in developing a website for the Internet or an intranet.'} />
@@ -183,7 +178,7 @@ const Home = () => {
                 <Slider />
             </div>
 
-            <div className='lg:my-24 lg:py-14 py-10 bg-orange-200'>
+            {/* <div className='lg:my-24 lg:py-14 py-10 bg-orange-200'>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-md font-semibold text-orange-500 '>ARTICLES</h1>
                     <h1 className='text-4xl font-semibold '>Recent Blogs</h1>
@@ -191,7 +186,7 @@ const Home = () => {
                 <div className=''>
                     <MultipleSlider color='' />
                 </div>
-            </div>
+            </div> */}
         </div >
 
     )

@@ -1,6 +1,6 @@
 import React from 'react'
 import pageImage from '../assets/card2.jpg'
-
+import BgImage from '../assets/srcpl-images/about-job.jpg'
 
 
 const data = [{
@@ -90,9 +90,17 @@ const data = [{
 }]
 const Solutions = (props) => {
   return (
-    <div className=' flex bg-[#f8f8f8] flex-col gap-2   justify-center  py-6 '>
-      <div id='solutions'  className='text-4xl bg-gray-200 my-14 py-14 text-orange-500 font-semibold text-center '>
+    <div className=' flex bg-[#f8f8f8] flex-col gap-10    justify-center   '>
+     
+     <div className=' flex flex-row   relative justify-center  py-44 bg-cover bg-fixed   bg-[#1b2341] h-300px' style={{
+                backgroundImage: `linear-gradient(rgba(7, 9, 65, 1), rgba(7, 9, 65  , 0.8)), url(${BgImage})`
+
+            }}>
+     
+      <div id='solutions'  className='text-4xl   hover:text-orange-500 text-white font-semibold text-center '>
         {data[0].header}
+      </div>
+
       </div>
 
       <div className='text-lg   text-gray-400  lg:mb-6 lg:mx-14 lg:px-0 px-10 text-justify'>

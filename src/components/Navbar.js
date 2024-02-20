@@ -82,7 +82,7 @@ const Navbar = (props) => {
   const linkButtonStyle = 'text-md font-semibold text-orange-500 hover:text-black font-normal'
 
   return (
-    <div className={`flex flex-row justify-between px-5  my-0.5 items-center py-2 bg-[#fff] z-50 w-full ${active ? 'fixed -top-1' : ''} shadow `}>
+    <div className={`flex flex-row justify-between px-5  my-0.5 items-center py-1 bg-[#fff] z-50 w-full ${active ? 'fixed -top-1' : ''} shadow `}>
 
       <Link to='/'>
         <div className='w-64'>

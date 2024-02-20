@@ -17,7 +17,7 @@ const ProductsCard = (props) => {
         navigate(`/products-page/${props.no}`)
     }
     return (
-        <div data-aos='zoom-in' data-aos-delay='300' data-aos-once='true' className='flex flex-col items-center justify-between gap-8 rounded-xl px-10 py-10  bg-white shadow'>
+        <div data-aos='zoom-in' data-aos-delay='300' data-aos-once='true' className='flex flex-col items-center justify-between gap-8 rounded-xl px-10 py-10 hover:shadow-2xl bg-white shadow'>
 
 
             <div className='flex flex-col  gap-10'>
