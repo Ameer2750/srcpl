@@ -4,7 +4,7 @@ import { FaArrowRightToCity } from 'react-icons/fa6'
 import { MdArrowForwardIos } from 'react-icons/md'
 const CardWithImage = (props) => {
     return (
-        <div className=' flex flex-col gap-5 shadow '>
+        <div  className=' flex flex-col gap-5 pb-7 rounded-md shadow '>
 
             <div className='flex flex-col gap-8'>
                 <img src={props.img} />
@@ -21,7 +21,7 @@ const CardWithImage = (props) => {
                 </p>
                 <div className='flex flex-row hover:text-blue-950 gap-2 text-orange-500 items-center  '>
                     <button>Read More</button>
-                    <MdArrowForwardIos className='my-2 text-lg' />
+                    <MdArrowForwardIos className='my-2 text-lg ' />
                 </div>
 
 
