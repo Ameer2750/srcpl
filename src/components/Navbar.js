@@ -182,9 +182,9 @@ const Navbar = (props) => {
         </div>
 
         <ul className="flex flex-col items-start px-4 py-8 space-y-4 ">
-          
+
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
-            <Link to ='/'>Home</Link>
+            <Link to='/'>Home</Link>
           </li>
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
             <Link to='/about-us'>About Us</Link>
@@ -193,13 +193,13 @@ const Navbar = (props) => {
             <Link to='/solutions'>Solutions</Link>
           </li>
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
-            <Link to ='/products'>Products</Link>
+            <Link to='/products'>Products</Link>
           </li>
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
-            <Link to ='/principles'>Principles</Link>
+            <Link to='/principles'>Principles</Link>
           </li>
           <li className=' hover:text-orange-500   px-2 py-2 rounded-lg cursor-pointer' onClick={closeMenu} >
-            <Link to  href='/contact-us'>Contact Us</Link>
+            <Link to='/contact-us'>Contact Us</Link>
           </li>
         </ul>
       </div>
