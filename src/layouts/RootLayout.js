@@ -10,7 +10,7 @@ import { Outlet } from 'react-router-dom';
 
 const RootLayout = () => {
     return (
-        <div className='overflow-x-hidden'>
+        <div className='overflow-x-hidden container mx-auto '>
             <Header/>
             <Navbar />
             <Outlet />

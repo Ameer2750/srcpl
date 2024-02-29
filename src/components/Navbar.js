@@ -25,15 +25,15 @@ const Navbar = (props) => {
   };
 
 
-  const [active, setActive] = useState(false);
-  window.addEventListener('scroll', function () {
+  // const [active, setActive] = useState(false);
+  // window.addEventListener('scroll', function () {
 
-    if (this.window.scrollY > 100) {
-      setActive(true);
-    } else {
-      setActive(false);
-    }
-  })
+  //   if (this.window.scrollY > 100) {
+  //     setActive(true);
+  //   } else {
+  //     setActive(false);
+  //   }
+  // })
 
   const navigate = useNavigate()
 
@@ -82,11 +82,11 @@ const Navbar = (props) => {
   const linkButtonStyle = 'text-md font-semibold text-orange-500 hover:text-black font-normal'
 
   return (
-    <div className={`flex flex-row justify-between px-5  my-0.5 items-center py-1 bg-[#fff] z-50 w-full ${active ? 'fixed -top-1' : ''} shadow `}>
+    <div className={`flex flex-row justify-between px-5 my-0.5 items-center py-1 bg-[#fff] z-50 container fixed -top-1 shadow `}>
 
       <Link to='/'>
-        <div className='w-64'>
-          <img src={logo} className='h-20   py-4 mx-4' />
+        <div className=''>
+          <img src={logo} className='w-24 mx-4' />
         </div>
       </Link>
 
